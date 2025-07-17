@@ -1,0 +1,104 @@
+.modal-content {
+    border-radius: 20px !important;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.modal-header {
+    display: flex;
+    background-color: var(--card-background-color) !important;
+    border-color: var(--modal-background-color);
+    border-radius: 20px !important;
+    width: calc(100% - 10px); /* Subtract left + right margins */
+    box-sizing: border-box;
+    margin: 5px;
+    height: 75px;
+}
+
+.modal-partner-name {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+.modal-partner-country {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+}
+
+.modal-partner-country-name {
+    margin-bottom: 0;
+    color: var(--primary-text-color);
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-bottom: 0;
+}
+
+.modal-partner-flag {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.modal-partner-details {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0px 16px; /* vertical and horizontal spacing */
+    color: var(--details-text-color);
+    margin-bottom: 1rem;
+    
+}
+
+.modal-partner-details p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.modal-partner-description {
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 1rem;
+    text-align: left;
+    overflow-y: auto; /* allow scrolling if content overflows */
+    max-height: 40vh; /* limit height to prevent overflow */
+    white-space: pre-line !important; /* preserve line breaks */
+}
+
+.modal-footer{
+    display: flex;
+    background-color: var(--card-background-color) !important;
+    border-color: var(--modal-background-color);
+    border-radius: 20px !important;
+    width: calc(100% - 10px); /* Subtract left + right margins */
+    box-sizing: border-box;
+    margin: 5px;
+    height: 75px;
+    transition: background-color 0.2s ease;
+    font-size: 1.2rem !important;
+}
+
+.modal-footer:hover{
+    background-color: var(--background-color) !important;
+    transition: background-color 0.2s ease;
+}
+
+.close-button {
+    color: white !important;
+    border: none !important;
+    font-size: 1.2rem !important;
+    width: 100%;
+    height: 100%;
+    background: none !important;
+}
+
+/* .close-button:hover {
+    color: white !important;
+    border: none !important;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    background: none !important;
+} */
+

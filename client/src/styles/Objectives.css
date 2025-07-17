@@ -36,6 +36,46 @@
     padding-top: 5vh !important;
 }
 
+.objectives-cards-container{
+    padding-top: 5vh !important;
+    padding-bottom: 5vh !important;
+    background-color: var(--partners-background-color) !important;
+}
+
+.objective-cards-grid-title{
+    padding-left: 4vw !important;
+}
+
+.objective-cards-grid-title-text{
+    font-size: clamp(2rem, 5vw, 4rem) !important;
+    color: black !important;
+}
+
+.objective-cards-grid {
+    padding-top: 20vh !important;
+    padding-bottom: 2vh !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.specifics-cards-container{
+    padding-top: 10vh !important;
+    padding-bottom: 5vh !important;
+}
+
+.specifics-cards-grid-title{
+    padding-left: 4vw !important;
+}
+
+.specifics-cards-grid {
+    padding-top: 2vh !important;
+    padding-bottom: 2vh !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
     .objectives-page-description {
         flex-direction: column; /* Stack items vertically */
@@ -62,6 +102,33 @@
 
     .objectives-p {
         font-size: clamp(0.8rem, 3vw, 1rem) !important;
+    }
+
+    .objective-cards-grid-title{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .objective-cards-grid {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: var(--partners-background-color) !important;
+        padding-top: 50px !important;
+    }
+
+    .specifics-cards-grid-title{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .specifics-cards-grid {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 50px !important;
     }
 
 }
@@ -101,6 +168,26 @@
 
     .objectives-p {
         font-size: clamp(0.8rem, 3vw, 1rem) !important;
+    }
+
+    .objective-cards-grid-title{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .objective-cards-grid {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: var(--partners-background-color) !important;
+        padding-top: 50px !important;
+    }
+
+    .specifics-cards-grid-title{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     
 }

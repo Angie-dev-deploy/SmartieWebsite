@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "goldman";
+  src: url("./resources/Goldman-Regular.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body {
   margin: 0;

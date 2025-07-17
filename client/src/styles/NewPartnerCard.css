@@ -1,0 +1,268 @@
+.new-partner-card {
+    width: 400px;
+    height: 110px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: relative;
+}
+
+.new-partner-circle-image-wrapper {
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    left: -40px;
+}
+
+.new-partner-circle-image-container {
+    height: 110px;
+    aspect-ratio: 1; /* maintains square aspect ratio */
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: var(--card-image-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* prevents overflow from image */
+}
+
+.new-partner-circle-image {
+    width: 70%; /* or any size smaller than container */ 
+    height: 70%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+.new-partner-card-body {
+    background-color: var(--card-background-color) !important;
+    color: var(--primary-text-color);
+    border-radius: 15px !important;
+    text-align: center;
+    height: 110px;
+    width: 100%;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: row;
+    flex: 1; /* fills remaining space */
+    overflow: hidden; /* hide overflow content */
+
+
+}
+
+.new-partner-name-and-flag-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start !important;
+    justify-content: space-between;
+    
+}
+
+.new-partner-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: white !important;
+    margin-bottom: 0;
+}
+
+.new-partner-name{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    color: white !important;
+}
+
+.new-partner-flag {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.new-partner-coordinator-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #00FF00;
+   
+}
+
+.new-partner-coordinator{
+    padding: 0 15px;
+    background-color: hsla(120, 100%, 40%, 0.25); /* Hue for green */
+    border-radius: 5px;
+}
+
+.coordinator-placeholder{
+    padding-bottom: 16.8px;
+}
+
+.new-partner-contact-grid {
+  display: grid;
+  grid-template-rows: auto auto; /* 2 rows */
+  grid-template-columns: max-content 1fr auto; /* label, value, Learn More */
+  column-gap: 10px;
+  row-gap: 4px;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--secondary-text-color);
+}
+
+.contact-label {
+  font-weight: bold;
+}
+
+.contact-value {
+  display: flex;
+  align-items: baseline !important; /* align text to baseline */
+  gap: 4px; /* space between phone and learn more */
+}
+
+.contact-label:nth-child(1) {
+  grid-row: 1;
+  grid-column: 1;
+}
+.contact-value:nth-child(2) {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+}
+
+.contact-label:nth-child(3) {
+  grid-row: 2;
+  grid-column: 1;
+}
+.contact-value-email {
+ white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px; /* or whatever works visually */
+  text-align: left; /* ✅ force horizontal alignment */
+  display: block; /* ✅ in case something like flex messed it up */
+}
+
+.learn-more-button-wrapper {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+
+.learn-more-button {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.learn-more-button:hover {
+    color: var(--secondary-text-color);
+    transition: color 0.2s ease;
+}
+
+@media screen and (max-width: 768px) {
+    /* .specific-card {
+        flex-direction: column;
+        height: 360px;
+        width: 70vw;
+        margin: 80px 0; 
+        align-items: center; 
+    } */
+
+    .specific-circle-image-wrapper {
+        top: -100px; /* moves it up above card body */
+        left: 50%;   /* center from left edge */
+        transform: translateX(-50%); /* perfectly center it */
+    }
+
+    .specific-circle-image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .specific-circle-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .specific-card-body {
+        padding-top: 60px; /* adjust padding for smaller screens */
+        padding-left: 0px;
+        min-height: 250px;
+    }
+    
+    .new-partner-name {
+        font-size: 0.8rem; /* adjust font size for smaller screens */
+    }
+
+    .new-partner-contact-grid {
+        display: grid;
+        grid-template-rows: auto auto; /* 2 rows */
+        grid-template-columns: max-content 1fr auto; /* label, value, Learn More */
+        column-gap: 10px;
+        row-gap: 4px;
+        align-items: center;
+        font-size: 0.7rem;
+        color: var(--secondary-text-color);
+    }
+    
+    .new-partner-flag {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .specific-card {
+        width: 60vw; /* 80% of the screen width */
+        height: 360px; /* auto height to fit content */
+        margin: 50px 0; /* vertical margin for spacing */
+        align-items: center;
+    }
+
+    .specific-circle-image-wrapper {
+        top: -100px; /* moves it up above card body */
+        left: 50%;   /* center from left edge */
+        transform: translateX(-50%); /* perfectly center it */
+    }
+
+    .specific-circle-image-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .specific-circle-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .specific-card-body {
+        padding-top: 60px; /* adjust padding for smaller screens */
+        padding-left: 0px;
+        min-height: 250px;
+    }
+
+    .new-partner-name {
+        font-size: 0.8rem; /* adjust font size for smaller screens */
+    }
+    
+    .new-partner-contact-grid {
+        display: grid;
+        grid-template-rows: auto auto; /* 2 rows */
+        grid-template-columns: max-content 1fr auto; /* label, value, Learn More */
+        column-gap: 10px;
+        row-gap: 4px;
+        align-items: center;
+        font-size: 0.7rem;
+        color: var(--secondary-text-color);
+    }
+    
+    .new-partner-flag {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
+
+}

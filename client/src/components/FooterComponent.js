@@ -1,6 +1,6 @@
 import React from "react";
 
-import { LogoInstagram, LogoFacebook, LogoLinkedin } from '@carbon/icons-react';
+import { LogoInstagram, LogoFacebook, LogoLinkedin, LogoX, LogoYoutube } from '@carbon/icons-react';
 
 import lighthorizontalLogo from "../resources/LightHorizontal.png";
 import erasmusrightLogo from "../resources/Erasmus_right.png";
@@ -20,14 +20,20 @@ const FooterComponent = () => {
                     </a>
                 </div>
                 <div className="social-links">
-                    <a href="https://www.instagram.com/smartieproject.eu/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/smartie.project/" target="_blank" rel="noopener noreferrer">
                         <LogoInstagram className="social-icon" />
                     </a>
-                    <a href="https://www.facebook.com/smartieproject.eu" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/profile.php?id=61575182236472" target="_blank" rel="noopener noreferrer">
                         <LogoFacebook className="social-icon" />
                     </a>
-                    <a href="https://www.linkedin.com/company/smartie-project-eu/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/smartie-project-6a8183362/" target="_blank" rel="noopener noreferrer">
                         <LogoLinkedin className="social-icon" />
+                    </a>
+                    <a href="https://x.com/SMARTIE_Project" target="_blank" rel="noopener noreferrer">
+                        <LogoX className="social-icon" />
+                    </a>
+                    <a href="https://www.youtube.com/@smartieproject" target="_blank" rel="noopener noreferrer">
+                        <LogoYoutube className="social-icon" />
                     </a>
                 </div>
                 <div className="erasmus-container">
