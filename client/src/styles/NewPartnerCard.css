@@ -150,6 +150,8 @@
 .learn-more-button {
     color: white;
     text-decoration: underline;
+    background: transparent;
+    border: none;
     text-underline-offset: 2px;
     cursor: pointer;
     transition: color 0.2s ease;

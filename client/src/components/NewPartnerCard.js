@@ -36,9 +36,9 @@ const NewPartnerCard = ({partnerImage, partnerName, countryName, partnerFlag, co
                             
                         </div>
                         <div className="learn-more-button-wrapper">
-                            <a className="learn-more-button" onClick={toggleModal}>
+                            <button className="learn-more-button" onClick={toggleModal}>
                                 Learn More &gt;&gt;
-                            </a>
+                            </button>
                             <PartnerModal 
                                 isOpen={modalOpen}
                                 toggle={toggleModal}

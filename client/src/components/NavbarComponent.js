@@ -29,10 +29,15 @@ function NavbarComponent(args) {
 
   const navigate = useNavigate();
 
+  const handleNavigate = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div>
       <Navbar className='navbar' expand='lg' {...args}>
-        <NavbarBrand onClick={() => navigate(ROOT.name)}>
+        <NavbarBrand onClick={() => handleNavigate(ROOT.name)}>
             <img
                 src={lightHorizontalLogo}
                 width="243"
@@ -44,22 +49,22 @@ function NavbarComponent(args) {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ms-auto" navbar>
             <NavItem>
-              <NavLink onClick={() => navigate(PARTNERS.name)}>Partners</NavLink>
+              <NavLink onClick={() => handleNavigate(PARTNERS.name)}>Partners</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={() => navigate(OBJECTIVES.name)}>Objectives</NavLink>
+              <NavLink onClick={() => handleNavigate(OBJECTIVES.name)}>Objectives</NavLink>
             </NavItem>
             <NavItem>
-                <NavLink onClick={() => navigate(ACTIVITIES.name)}>Activities</NavLink>
+                <NavLink onClick={() => handleNavigate(ACTIVITIES.name)}>Activities</NavLink>
             </NavItem>
             <NavItem>
-                <NavLink onClick={() => navigate(DELIVERABLES.name)}>Deliverables</NavLink>
+                <NavLink onClick={() => handleNavigate(DELIVERABLES.name)}>Deliverables</NavLink>
             </NavItem>
             <NavItem>
-                <NavLink onClick={() => navigate(MATERIALS.name)}>Materials?</NavLink>
+                <NavLink onClick={() => handleNavigate(MATERIALS.name)}>Materials?</NavLink>
             </NavItem>
             <NavItem >
-                <NavLink className='contact-us'  onClick={() => navigate(CONTACTUS.name)}>Contact Us!</NavLink>
+                <NavLink className='contact-us'  onClick={() => handleNavigate(CONTACTUS.name)}>Contact Us!</NavLink>
             </NavItem>
           </Nav>
          
