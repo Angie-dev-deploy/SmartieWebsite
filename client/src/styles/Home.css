@@ -1,0 +1,92 @@
+.text-div{
+    color: var(--primary-text-color);
+}
+
+/* Responsive Text */
+.home-title {
+    font-size: clamp(2.5rem, 5vw, 6rem) !important; 
+}
+
+.home-subtitle {
+    font-size: clamp(1.5rem, 3vw, 2rem) !important; 
+}
+
+.home-p {
+    margin-top: 4vh !important;
+    color: var(--secondary-text-color) !important;
+    font-size: clamp(1rem, 2vw, 1.4rem) !important;
+}
+
+.text-div{
+    width: clamp(400px, 50vw, 850px) !important;
+    margin-left: 5vw !important; 
+    margin-top: 10vh !important;
+}
+
+.home-page-content{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+    flex-wrap: wrap !important;
+
+    background-image: url("../resources/blobs.png"); 
+    background-size: contain;
+    background-position: right -100px center;
+    background-repeat: no-repeat;
+
+    padding-top: 5vh !important;
+}
+
+.erasmus-div{
+    margin-left: 2vw !important;
+    margin-top: 10vh !important;
+}
+
+.erasmus-img{
+    width: 30vw !important;
+    height: auto !important;
+}
+
+@media screen and (max-width: 768px) {
+    .home-page-content {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center !important;
+        align-items: center !important;
+
+        text-align: center !important;
+    }
+
+    .text-div {
+        width: 90% !important; /* 90% of the screen width */
+        text-align: center !important;
+    }
+
+    .home-title {
+        font-size: clamp(1.5rem, 5vw, 3rem) !important;
+    }
+
+    .home-subtitle {
+        font-size: clamp(1rem, 4vw, 1.5rem) !important;
+    }
+
+    .home-p {
+        font-size: clamp(0.8rem, 3vw, 1rem) !important;
+    }
+
+    .erasmus-div {
+        margin-top: 3vh !important;
+        margin-left: 0 !important;
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .erasmus-img {
+        width: 80vw !important /* Increase size for better visibility */
+    }
+}

@@ -1,0 +1,12 @@
+.work-in-progress-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.work-in-progress-text {
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}

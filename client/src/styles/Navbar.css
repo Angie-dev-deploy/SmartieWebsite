@@ -1,0 +1,246 @@
+/* NAVBAR */
+.navbar {
+    background-color: #1A2633 !important;
+    height: clamp(60px, 10vh, 82px) !important; 
+    padding: 0 2vw !important; 
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+}
+
+/* BRAND LOGO */
+/*.navbar-brand {
+    width: clamp(120px, 15vw, 243px); 
+    height: auto; 
+    max-height: 72px; 
+}
+*/
+
+.navbar-brand img:hover {
+    cursor: pointer !important;
+}
+
+
+
+/* NAV LINKS */
+.nav-item {
+    height: auto; /* Adjust based on content */
+    width: auto; /* Ensures natural sizing */
+    padding: 0.5rem 1rem; /* Adds spacing */
+}
+
+/* NAV TEXT */
+.nav-link {
+    color: white !important;
+    cursor: pointer;
+    font-size: clamp(1rem, 1.5vw, 1.5rem); /* Responsive font size */
+}
+
+.nav-link:hover {
+    color: var(--secondary-background-color) !important;
+}
+
+.contact-us{
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: var(--secondary-background-color) !important;
+    padding: 0.2rem 1rem 0.2rem 1rem !important;
+    align-items: center !important;
+    margin-top: 0.5rem !important;
+}
+
+.contact-us:hover{
+    background-color: white !important;
+    color: var(--secondary-background-color) !important;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler:focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1) !important;
+}
+
+
+.collapse{
+    justify-content: flex-end !important;
+    background-color: var(--background-color) !important;
+}
+
+.navbar-collapse{
+    justify-content: flex-end !important;
+    background-color: var(--background-color) !important;
+}
+
+
+
+/* RESPONSIVE NAV MENU (FOR SMALL SCREENS) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar {
+        flex-direction: column !important; /* Stack items vertically */
+        height: auto !important; /* Adjust height based on content */
+        padding: 1rem 0 !important; /* Add padding */
+    }
+
+    .collapse .navbar-nav {
+        display: none !important; /* Hide menu */
+    }
+
+    .collapse.show .navbar-nav {
+        display: flex !important; /* Show menu */
+        flex-direction: column !important; /* Stack items vertically */
+        width: 100% !important; /* Full width menu */
+    }
+
+    .navbar-toggler {
+        display: flex !important; /* Show hamburger menu */
+        margin-left: auto !important; /* Move to right */
+    }
+
+        /* NORMAL CLOSED STATE */
+    .collapse {
+        display: none !important;
+    }
+    
+    /* DURING OPENING/CLOSING (animation) */
+    .collapsing {
+        max-height: auto !important;
+        overflow: hidden !important;
+        transition: max-height 0.6s ease-in-out !important;
+        display: block !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    
+    /* WHEN FULLY OPENED */
+    .collapse.show {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-height: 1000px !important; /* any big enough value */
+        overflow: hidden !important;
+        background-color: var(--background-color) !important;
+    }
+    
+  
+    
+    .navbar-collapse{
+        justify-content: flex-end !important;
+        background-color: var(--background-color) !important;
+    }
+
+    .navbar-collapse.show {
+        display: flex !important; /* Show menu when toggled */
+        flex-direction: column !important; /* Stack items vertically */
+        width: 100% !important; /* Full width menu */
+    }
+
+    .nav-brand {
+        width: 40% !important; /* Smaller logo on mobile */
+    }
+
+    .nav-item {
+        text-align: center !important; /* Center text */
+        width: 100% !important; /* Full width menu */
+    }
+
+    .nav-link {
+        font-size: 1.2rem !important; /* Adjust font for mobile */
+        display: block !important; /* Stack links */
+        padding: 10px 0 !important; /* Add padding */
+    }
+
+    .container-fluid {
+        display: block !important; /* Show container */
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        flex-direction: column !important; /* Stack items vertically */
+        height: auto !important; /* Adjust height based on content */
+        padding: 1rem 0 !important; /* Add padding */
+    }
+
+    .collapse .navbar-nav {
+        display: none !important; /* Hide menu */
+    }
+
+    .collapse.show .navbar-nav {
+        display: flex !important; /* Show menu */
+        flex-direction: column !important; /* Stack items vertically */
+        width: 100% !important; /* Full width menu */
+    }
+
+    .navbar-toggler {
+        display: flex !important; /* Show hamburger menu */
+        margin-left: auto !important; /* Move to right */
+    }
+
+        /* NORMAL CLOSED STATE */
+    .collapse {
+        display: none !important;
+    }
+    
+
+    
+    
+    /* WHEN FULLY OPENED */
+    .collapse.show {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-height: 1000px !important; /* any big enough value */
+        overflow: hidden !important;
+        background-color: var(--background-color) !important;
+    }
+    
+  
+    
+    .navbar-collapse{
+        justify-content: flex-end !important;
+        background-color: var(--background-color) !important;
+    }
+
+    .navbar-collapse.show {
+        display: flex !important; /* Show menu when toggled */
+        flex-direction: column !important; /* Stack items vertically */
+        width: 100% !important; /* Full width menu */
+    }
+
+    .nav-brand {
+        width: 40% !important; /* Smaller logo on mobile */
+    }
+
+    .nav-item {
+        text-align: center !important; /* Center text */
+        width: 100% !important; /* Full width menu */
+    }
+
+    .nav-link {
+        font-size: 1.2rem !important; /* Adjust font for mobile */
+        display: block !important; /* Stack links */
+        padding: 10px 0 !important; /* Add padding */
+    }
+    
+    .container-fluid {
+        display: flex !important; /* Show container */
+    }
+    
+}
+
+
+
+
