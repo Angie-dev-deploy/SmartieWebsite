@@ -9,7 +9,7 @@ const ContactUsComponent = () => {
         <div className="contactus-page">
             <div className="contactus-page-description">
                 <div className="contactus-content" style={{display: "flex", flexDirection: "column"}}>
-                    <div className="text-div">
+                    <div className="contactus-text-div">
                         <h1 className="contactus-title">Contact Us!</h1>
                         <p className="contactus-p">
                         Get in touch with our team - we’re here to help with any questions, 
@@ -77,7 +77,7 @@ const ContactUsComponent = () => {
                                     </a>
                                 </div>
                                 <div className="social-row">
-                                    <a href="https://www.linkedin.com/in/smartie-project-6a8183362/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.linkedin.com/company/smartie-project/" target="_blank" rel="noopener noreferrer">
                                     <LogoLinkedin className="contactus-social-icon" />
                                     <p className="social-text">LinkedIn</p>
                                     </a>

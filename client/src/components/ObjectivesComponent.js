@@ -10,7 +10,7 @@ const ObjectivesComponent = () => {
         <div className="objectives-page">
             <div className="objectives-page-description">
                 <div className="description-content" style={{display: "flex", flexDirection: "column"}}>
-                    <div className="text-div">
+                    <div className="objectives-text-div">
                         <h1 className="objectives-title">Objectives</h1>
                         <p className="objectives-p">
                         SMARTIE aims to empower higher education institutions across Europe to responsibly 

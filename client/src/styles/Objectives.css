@@ -1,4 +1,4 @@
-.text-div{
+.objectives-text-div{
     color: var(--primary-text-color);
 }
 
@@ -12,7 +12,7 @@
     font-size: clamp(1rem, 2vw, 1.4rem) !important;
 }
 
-.text-div{
+.objectives-text-div{
     width: clamp(400px, 50vw, 850px) !important;
     margin-left: 5vw !important; 
     margin-top: 10vh !important;
@@ -91,8 +91,8 @@
   
     }
 
-    .text-div {
-        width: 70% !important; /* 90% of the screen width */
+    .objectives-text-div {
+        width: 90% !important; /* 90% of the screen width */
         text-align: center !important;
     }
 
@@ -156,7 +156,7 @@
         width: 100% !important;
     }
 
-    .text-div {
+    .objectives-text-div {
         width: 70% !important; /* 70% of the screen width */
         text-align: center !important;
         justify-content: center !important;

@@ -29,7 +29,7 @@ const PartnersComponent = () => {
         <div className="partners-page">
             <div className="partners-page-description">
                 <div className="description-content" style={{display: "flex", flexDirection: "column"}}>
-                    <div className="text-div">
+                    <div className="partners-text-div">
                         <h1 className="partners-title">Our Partners</h1>
                         <p className="partners-p">
                         SMARTIE collaborates with a diverse network of universities, 
