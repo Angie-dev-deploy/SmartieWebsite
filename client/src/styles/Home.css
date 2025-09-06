@@ -58,10 +58,28 @@
         justify-content: flex-start;
         align-items: center;
         margin-top: 0;
-        /* background-position: top center */
         text-align: center;
         height: auto;
+
+        position: relative;
+        background-image: none;
+        z-index: 0;
         
+    }
+
+    .home-page-content::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 150px;
+        bottom: 0;
+        background-image: url("../resources/blobs.png");
+        background-position: right -100px top -10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.5; 
+        z-index: -1;
+
     }
 
     .home-text-div {

@@ -272,7 +272,7 @@
     }
 
     .link-title {
-        font-size: 1.2rem ;
+        font-size: 1rem ;
         padding: 0.5rem ;
         height: 50px ;
         align-items: center ;
@@ -294,8 +294,8 @@
     }
 
     .link-icon-icon {
-        width: 1.5rem ;
-        height: 1.5rem ;
+        width: 3.5rem ;
+        height: 3.5rem ;
     }
 
     .link-content {

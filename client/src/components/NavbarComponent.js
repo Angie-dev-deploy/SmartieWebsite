@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Collapse,
   Navbar,
@@ -14,7 +14,7 @@ import {
   // NavbarText,
 } from 'reactstrap';
 
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import { ROOT, PARTNERS, OBJECTIVES, ACTIVITIES, DELIVERABLES, MATERIALS, CONTACTUS } from '../router/RouteNames';
 
@@ -28,6 +28,16 @@ function NavbarComponent(args) {
   const toggle = () => setIsOpen(!isOpen);
 
   const navigate = useNavigate();
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const navCollapse = document.querySelector(".navbar-collapse");
+    if (navCollapse && navCollapse.classList.contains("show")) {
+      navCollapse.classList.remove("show");
+      setIsOpen(false);
+    }
+}, [location])
 
   const handleNavigate = (path) => {
     navigate(path);
