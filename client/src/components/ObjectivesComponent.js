@@ -1,14 +1,22 @@
-import React from "react";
+import {useEffect} from "react";
 
 import ObjectiveCard from "./ObjectiveCard";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "../styles/Objectives.css";
 import SpecificObjectiveCard from "./SpecificObjectiveCard";
 
 const ObjectivesComponent = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 500, once: true });
+    }, []);
+
     return (
         <div className="objectives-page">
-            <div className="objectives-page-description">
+            <div className="objectives-page-description" data-aos="fade-in">
                 <div className="description-content" style={{display: "flex", flexDirection: "column"}}>
                     <div className="objectives-text-div">
                         <h1 className="objectives-title">Objectives</h1>

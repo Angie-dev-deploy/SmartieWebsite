@@ -4,18 +4,18 @@
 
 /* Responsive Text */
 .partners-title {
-    font-size: clamp(2.5rem, 5vw, 6rem) !important; 
+    font-size: clamp(2.5rem, 5vw, 6rem);
 }
 
 .partners-p {
-    color: var(--secondary-text-color) !important;
-    font-size: clamp(1rem, 2vw, 1.4rem) !important;
+    color: var(--secondary-text-color);
+    font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
 .partners-text-div{
     width: clamp(400px, 50vw, 850px);
-    margin-left: 5vw !important; 
-    margin-top: 10vh !important;
+    margin-left: 5vw;
+    margin-top: 10vh;
 }
 
 .partners-page-description{
@@ -26,24 +26,24 @@
     height: 100vh;
     width: 100%;
 
-    flex-wrap: wrap !important;
+    flex-wrap: wrap;
 
     background-image: url("../resources/earth.png"); 
     background-size: 40%;
     background-position: right 50px top 100px;
     background-repeat: no-repeat;
 
-    padding-top: 5vh !important;
+    padding-top: 5vh;
 }
 
 .partner-cards{
-    padding-top: 25vh !important;
-    padding-bottom: 15vh !important;
+    padding-top: 25vh;
+    padding-bottom: 15vh;
     padding-left: 37px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--partners-background-color) !important;
+    background-color: var(--partners-background-color);
     gap: 50px;
     width: 100%;
 }
@@ -51,14 +51,17 @@
 @media screen and (max-width: 768px) {
     .partners-page-description {
         flex-direction: column; /* Stack items vertically */
-        margin-top: 50px !important;
-        align-items: center !important;
+        margin-top: 50px;
+        align-items: center;
 
-        text-align: center !important;
+        text-align: center;
+
+        height: 100%;
+        padding-bottom: 60vh;
 
         background-image: url("../resources/earth.png");
-        background-size: 50%;
-        background-position: bottom 150px center;
+        background-size: 70%;
+        background-position: bottom 20vh center;
         background-repeat: no-repeat;
   
     }
@@ -69,16 +72,18 @@
     }
 
     .partners-title {
-        font-size: clamp(1.5rem, 5vw, 3rem) !important;
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin-bottom: 3vh;
     }
 
     .partners-p {
-        font-size: clamp(0.8rem, 3vw, 1rem) !important;
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        text-align: left;
     }
 
     .partner-cards {
-        padding-top: 10vh !important;
-        padding-bottom: 5vh !important;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
     }
 
 }
@@ -86,10 +91,10 @@
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .partners-page-description {
         flex-direction: column; /* Stack items vertically */
-        margin-top: 50px !important;
-        align-items: center !important;
+        margin-top: 50px;
+        align-items: center;
 
-        text-align: center !important;
+        text-align: center;
 
         background-image: url("../resources/earth.png");
         background-size: 70%;
@@ -98,12 +103,12 @@
     }
 
     .description-content{
-        text-align: center !important;
-        justify-content: center !important;
-        align-items: center !important;
-        display: flex !important;
-        flex-direction: column !important;
-        width: 100% !important;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     .partners-text-div {
@@ -117,11 +122,11 @@
     }
 
     .partners-p {
-        font-size: clamp(0.8rem, 3vw, 1rem) !important;
+        font-size: clamp(0.8rem, 3vw, 1rem);
     }
     .partner-cards {
-        padding-top: 10vh !important;
-        padding-bottom: 5vh !important;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
     }
 
     

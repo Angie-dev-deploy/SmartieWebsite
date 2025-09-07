@@ -1,13 +1,13 @@
-import React from "react";
-
 import { LogoInstagram, LogoFacebook, LogoLinkedin, LogoX, LogoYoutube } from '@carbon/icons-react';
 
 import lighthorizontalLogo from "../resources/LightHorizontal.png";
 import erasmusrightLogo from "../resources/Erasmus_right.png";
 
 import "../styles/Footer.css";
+import "../styles/FadeInAnimation.css";
 
 const FooterComponent = () => {
+
     return (
         <div className="footer">
             <div className="link-container">
@@ -42,7 +42,7 @@ const FooterComponent = () => {
                         width="243"
                         height="72"
                         alt="Erasmus+"
-                        className="erasmus-logo"
+                        className="erasmus-logo fadeIn-animation"
                     />
                 </div>
             </div>
@@ -55,7 +55,7 @@ const FooterComponent = () => {
                     width="243"
                     height="72"
                     alt="Smartie"
-                    className="footer-logo"
+                    className="footer-logo fadeIn-animation"
                 />
             </div>
             <div className="footer-text-container">

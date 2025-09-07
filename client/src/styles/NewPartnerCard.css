@@ -31,14 +31,13 @@
     width: 70%; /* or any size smaller than container */ 
     height: 70%;
     object-fit: contain;
-    border-radius: 50%;
 }
 
 
-.new-partner-card-body {
-    background-color: var(--card-background-color) !important;
+.card.new-partner-card-body {
+    background-color: var(--card-background-color) ;
     color: var(--primary-text-color);
-    border-radius: 15px !important;
+    border-radius: 15px;
     text-align: center;
     height: 110px;
     width: 100%;
@@ -54,7 +53,7 @@
 .new-partner-name-and-flag-container{
     display: flex;
     flex-direction: row;
-    align-items: flex-start !important;
+    align-items: flex-start ;
     justify-content: space-between;
     
 }
@@ -62,14 +61,14 @@
 .new-partner-title {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: white !important;
+    color: white ;
     margin-bottom: 0;
 }
 
 .new-partner-name{
     font-size: 1.2rem;
     margin-bottom: 0;
-    color: white !important;
+    color: white ;
 }
 
 .new-partner-flag {
@@ -81,7 +80,7 @@
 .new-partner-coordinator-container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start !important;
+    align-items: flex-start ;
     justify-content: space-between;
     font-size: 0.7rem;
     color: #00FF00;
@@ -115,7 +114,7 @@
 
 .contact-value {
   display: flex;
-  align-items: baseline !important; /* align text to baseline */
+  align-items: baseline ; /* align text to baseline */
   gap: 4px; /* space between phone and learn more */
 }
 

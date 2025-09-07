@@ -1,4 +1,4 @@
-import React from 'react';
+import {useEffect} from 'react';
 import {
   Button,
   Modal,
@@ -8,10 +8,17 @@ import {
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 import "../styles/PartnerModal.css";
 
 function PartnerModal(props) {
   const {isOpen, toggle, className, partnerName, partnerCountry, partnerFlag, partnerDescription, phone, email, contactPerson } = props;
+
+  useEffect(() => {
+    Aos.init({ duration: 500, once: true });
+  }, []);
 
   return (
     <div>
@@ -28,7 +35,7 @@ function PartnerModal(props) {
                 <p className='modal-partner-name'>{partnerName}</p>
             </div>
             <div className='modal-partner-country'>
-                <img src={partnerFlag} alt={`${partnerCountry} Flag`} className='modal-partner-flag' />
+                <img src={partnerFlag} alt={`${partnerCountry} Flag`} className='modal-partner-flag' data-aos="fade-in" />
                 <p className='modal-partner-country-name'>{partnerCountry}</p>
             </div>
         </ModalHeader>

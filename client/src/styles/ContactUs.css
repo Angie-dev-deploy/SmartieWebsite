@@ -226,9 +226,12 @@
         justify-content: flex-start;
         text-align: center ;
 
-        background-image: url("../resources/target.png");
-        background-size: 50%;
-        background-position: bottom 150px center;
+        height: 100% ;
+        padding-bottom: 60vh ;
+
+        background-image: url("../resources/phoneimage.png");
+        background-size: 70%;
+        background-position: bottom 20vh center;
         background-repeat: no-repeat;
   
     }
@@ -237,15 +240,17 @@
         width: 90%; /* 90% of the screen width */
         text-align: center;
         
-        padding: 8vw 0;
+        
     }
 
     .contactus-title {
-        font-size: clamp(1.5rem, 5vw, 3rem) ;
+        font-size: clamp(2rem, 5vw, 3rem) ;
+        margin-bottom: 3vh ;
     }
 
     .contactus-p {
-        font-size: clamp(0.8rem, 3vw, 1rem) ;
+        font-size: clamp(1rem, 3vw, 1.5rem) ;
+        text-align: left ;
     }
 
     .contactus-social-links {

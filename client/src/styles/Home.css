@@ -102,6 +102,7 @@
         font-size: clamp(1rem, 3vw, 1.5rem);
         padding-bottom: 3vh;
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        text-align: left;
     }
 
     .erasmus-div {

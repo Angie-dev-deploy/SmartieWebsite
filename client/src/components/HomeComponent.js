@@ -1,12 +1,19 @@
-import React from "react";
+import { useEffect } from "react";
 
 import erasmus from "../resources/Erasmus.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "../styles/Home.css";
 
 const HomeComponent = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 500, once: true });
+    }, []);
+
     return (
-        <div className="home-page-content">
+        <div className="home-page-content" data-aos="fade-in">
             
                 <div className="home-text-div">
                     <h1 className="home-title">SMARTIE</h1>
