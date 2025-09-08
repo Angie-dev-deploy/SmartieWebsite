@@ -11,7 +11,7 @@ import SpecificObjectiveCard from "./SpecificObjectiveCard";
 const ObjectivesComponent = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 500, once: true });
+        Aos.init({ duration: 1000, once: true });
     }, []);
 
     return (

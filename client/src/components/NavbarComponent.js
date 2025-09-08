@@ -38,7 +38,7 @@ function NavbarComponent(args) {
   }, [location]);
 
   useEffect(() => {
-        Aos.init({ duration: 500, once: true });
+        Aos.init({ duration: 1000, once: true });
   }, []);
 
   const handleNavigate = (path) => {

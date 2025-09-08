@@ -60,8 +60,8 @@
         padding-bottom: 60vh;
 
         background-image: url("../resources/earth.png");
-        background-size: 70%;
-        background-position: bottom 20vh center;
+        background-size: 70vw;
+        background-position: bottom 10vh center;
         background-repeat: no-repeat;
   
     }
@@ -96,34 +96,31 @@
 
         text-align: center;
 
-        background-image: url("../resources/earth.png");
-        background-size: 70%;
-        background-position: bottom 150px center;
-        background-repeat: no-repeat;
-    }
+        height: 100%;
+        padding-bottom: 60vh;
 
-    .description-content{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        background-image: url("../resources/earth.png");
+        background-size: 70vw;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+  
     }
 
     .partners-text-div {
-        width: 70%; /* 70% of the screen width */
+        width: 90%; /* 90% of the screen width */
         text-align: center;
-        justify-content: center;
-        align-items: center;
     }
+
     .partners-title {
-        font-size: clamp(2rem, 5vw, 4rem);
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin-bottom: 3vh;
     }
 
     .partners-p {
-        font-size: clamp(0.8rem, 3vw, 1rem);
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        text-align: left;
     }
+
     .partner-cards {
         padding-top: 10vh;
         padding-bottom: 5vh;

@@ -230,8 +230,8 @@
         padding-bottom: 60vh ;
 
         background-image: url("../resources/phoneimage.png");
-        background-size: 70%;
-        background-position: bottom 20vh center;
+        background-size: 70vw;
+        background-position: bottom 10vh center;
         background-repeat: no-repeat;
   
     }
@@ -259,25 +259,19 @@
 
     .phone-link-container,
     .email-link-container,
-    .social-links-wrapper {
+    .social-link-container {
 
-    
-        width: 100% ;
-        min-width: unset ;
-        max-width: 400px ;
+        min-width: 80vw ;
+
     }
 
-    .social-link-container{
-        width: 100% ;
-        min-width: unset ;
-        max-width: 400px ;
-        
-        
-        
+    .link-title-container {
+        width: 80vw ;
+        margin: 0 auto ;
     }
 
     .link-title {
-        font-size: 1rem ;
+        font-size: 1.2rem ;
         padding: 0.5rem ;
         height: 50px ;
         align-items: center ;
@@ -287,8 +281,7 @@
         display: flex ;
         flex-direction: column ;
         gap: 0.5rem ;
-        margin: 0 auto ;
-        max-width: 300px ;
+        
     }
 
     .link-icon{
@@ -304,13 +297,9 @@
     }
 
     .link-content {
-        font-size: 1rem ;
         padding: 0.5rem 0 ;
     }
 
-    .link-content a {
-        font-size: 1rem ;
-    }
 
     .social-row {
         gap: 2rem ;
@@ -331,6 +320,16 @@
         text-align: center;
     }
 
+    .email-link, .phone-link{
+        font-size: 1.1rem ;
+    }
+
+    .link-row-1{
+        
+        gap: 4rem ;
+        
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -341,33 +340,108 @@
         justify-content: flex-start;
         text-align: center ;
 
-        background-image: url("../resources/phoneimage.png");
-        background-size: 70%;
-        background-position: bottom 150px center;
-        background-repeat: no-repeat;
-    }
+        height: 100% ;
+        padding-bottom: 60vh ;
 
-    .description-content{
-        text-align: center ;
-        justify-content: center ;
-        align-items: center ;
-        display: flex ;
-        flex-direction: column ;
-        width: 100% ;
+        background-image: url("../resources/phoneimage.png");
+        background-size: 70vw;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+  
     }
 
     .contactus-text-div {
-        width: 70% ; /* 70% of the screen width */
-        text-align: center ;
-        justify-content: center ;
-        align-items: center ;
+        width: 90%; /* 90% of the screen width */
+        text-align: center;
+        
+        
     }
+
     .contactus-title {
-        font-size: clamp(2rem, 5vw, 4rem) ;
+        font-size: clamp(2rem, 5vw, 3rem) ;
+        margin-bottom: 3vh ;
     }
 
     .contactus-p {
-        font-size: clamp(0.8rem, 3vw, 1rem) ;
+        font-size: clamp(1rem, 3vw, 1.5rem) ;
+        text-align: left ;
+    }
+
+    .contactus-social-links {
+        margin-top: 20px;
+    }
+
+    .phone-link-container,
+    .email-link-container,
+    .social-link-container {
+
+        min-width: 80vw ;
+
+    }
+
+    .link-title-container {
+        width: 80vw ;
+        margin: 0 auto ;
+    }
+
+    .link-title {
+        font-size: 1.2rem ;
+        padding: 0.5rem ;
+        height: 50px ;
+        align-items: center ;
+        justify-content: center ;
+        text-align: center ;
+        width: 100% ;
+        display: flex ;
+        flex-direction: column ;
+        gap: 0.5rem ;
+        
+    }
+
+    .link-icon{
+        padding: 1rem ;
+        width: 50px ;
+        height: 50px ;
+        left: -20px ;
+    }
+
+    .link-icon-icon {
+        width: 3.5rem ;
+        height: 3.5rem ;
+    }
+
+    .link-content {
+        padding: 0.5rem 0 ;
+    }
+
+
+    .social-row {
+        gap: 2rem ;
+        width: 100% ;
+        flex-wrap: wrap ;
+        justify-content: center ;
+    }
+
+    .social-row a {
+        font-size: 1.2rem ;
+        min-width: unset ;
+    }
+
+    .social-text {
+        font-size: 1.2rem ;
+
+        margin: 0;
+        text-align: center;
+    }
+
+    .email-link, .phone-link{
+        font-size: 1.1rem ;
+    }
+
+    .link-row-1{
+        
+        gap: 4rem ;
+        
     }
     
 }

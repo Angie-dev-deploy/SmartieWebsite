@@ -29,7 +29,7 @@ import portugalflag from "../resources/portoflag.png";
 const PartnersComponent = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 500, once: true });
+        Aos.init({ duration: 1000, once: true });
     }, []);
 
     return (

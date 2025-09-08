@@ -1,13 +1,21 @@
-import React from "react";
+import { useEffect } from "react";
 
 import { Phone, Email, Wikis, LogoInstagram, LogoFacebook, LogoLinkedin, LogoX, LogoYoutube } from '@carbon/icons-react';
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "../styles/ContactUs.css";
 
 const ContactUsComponent = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 1000, once: true });
+    }, []);
+
     return (
         <div className="contactus-page">
-            <div className="contactus-page-description">
+            <div className="contactus-page-description" data-aos="fade-in">
                 <div className="contactus-content" style={{display: "flex", flexDirection: "column"}}>
                     <div className="contactus-text-div">
                         <h1 className="contactus-title">Contact Us!</h1>
