@@ -1,14 +1,21 @@
-import React from "react";
+import { useEffect } from "react";
 
 import erasmus from "../resources/Erasmus.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "../styles/Home.css";
 
 const HomeComponent = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 500, once: true });
+    }, []);
+
     return (
-        <div className="home-page-content">
-            <div style={{display: "flex", flexDirection: "column"}}>
-                <div className="text-div">
+        <div className="home-page-content" data-aos="fade-in">
+            
+                <div className="home-text-div">
                     <h1 className="home-title">SMARTIE</h1>
                     <h4 className="home-subtitle">Synergistic Management and Advancement of Artificial Intelligence in European Higher Education</h4>
                     <p className="home-p">
@@ -25,7 +32,7 @@ const HomeComponent = () => {
                         alt="erasmus" 
                     />
                 </div>
-            </div>
+            
         </div>
     );
 };

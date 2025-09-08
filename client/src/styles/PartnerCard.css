@@ -31,15 +31,14 @@
     width: 150px; /* or any size smaller than container */
     height: 150px;
     object-fit: contain;
-    border-radius: 50%;
 }
 
 
 .partner-card-body {
-    background-color: var(--card-background-color) !important;
+    background-color: var(--card-background-color);
     color: var(--primary-text-color);
     padding-top: 80px; /* to push text below image */
-    border-radius: 15px !important;
+    border-radius: 15px;
     text-align: center;
     min-height: 250px;
     width: 100%;
@@ -87,7 +86,7 @@
     .partner-card-body {
         padding-top: 60px; /* adjust padding for smaller screens */
     }
-        .partner-title {
+    .partner-title {
         font-size: 1.5rem; /* adjust font size for smaller screens */
     }
     

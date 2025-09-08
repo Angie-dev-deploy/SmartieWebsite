@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Collapse,
   Navbar,
@@ -7,18 +7,16 @@ import {
   Nav,
   NavItem,
   NavLink,
-  // UncontrolledDropdown,
-  // DropdownToggle,
-  // DropdownMenu,
-  // DropdownItem,
-  // NavbarText,
 } from 'reactstrap';
 
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import { ROOT, PARTNERS, OBJECTIVES, ACTIVITIES, DELIVERABLES, MATERIALS, CONTACTUS } from '../router/RouteNames';
 
 import lightHorizontalLogo from '../resources/LightHorizontal.png';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import '../styles/Navbar.css';
 
@@ -28,6 +26,20 @@ function NavbarComponent(args) {
   const toggle = () => setIsOpen(!isOpen);
 
   const navigate = useNavigate();
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const navCollapse = document.querySelector(".navbar-collapse");
+    if (navCollapse && navCollapse.classList.contains("show")) {
+      navCollapse.classList.remove("show");
+      setIsOpen(false);
+    }
+  }, [location]);
+
+  useEffect(() => {
+        Aos.init({ duration: 1000, once: true });
+  }, []);
 
   const handleNavigate = (path) => {
     navigate(path);
@@ -40,6 +52,7 @@ function NavbarComponent(args) {
         <NavbarBrand onClick={() => handleNavigate(ROOT.name)}>
             <img
                 src={lightHorizontalLogo}
+                data-aos="fade-in"
                 width="243"
                 height="72"
                 alt="Smartie"

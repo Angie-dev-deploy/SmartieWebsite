@@ -51,7 +51,6 @@
 
 .specific-title {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
     color: white !important;
 }
 
@@ -59,6 +58,7 @@
     color: black !important;
     font-size: 3rem;
     font-family: goldman, sans-serif;
+    margin-bottom: 0;
 }
 
 .specific-text {
@@ -103,7 +103,7 @@
     }
     
     .specific-text {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         
     }
 
@@ -111,40 +111,49 @@
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .specific-card {
-        width: 60vw; 
+        flex-direction: column;
         height: 360px; 
-        margin: 50px 0;
+        width: 70vw;
+        margin: 80px 0; 
         align-items: center;
     }
 
     .specific-circle-image-wrapper {
         top: -100px; 
-        left: 50%;  
-        transform: translateX(-50%); 
+        left: 50%;   
+        transform: translateX(-50%); /* perfectly center it */
     }
 
     .specific-circle-image-container {
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: var(--card-image-background-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; /* prevents overflow from image */
     }
 
     .specific-circle-image {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
 
     .specific-card-body {
+        margin-top: 20px;
         padding-top: 60px; 
         padding-left: 0px;
         min-height: 250px;
     }
-
+    
     .specific-title {
-        font-size: 1.3rem; 
+        font-size: 1.5rem; 
     }
     
     .specific-text {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         
     }
 

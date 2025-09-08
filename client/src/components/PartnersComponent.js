@@ -1,6 +1,9 @@
-import React from "react";
+import {useEffect} from "react";
 
 import NewPartnerCard from "./NewPartnerCard";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "../styles/Partners.css";
 
@@ -25,11 +28,15 @@ import portugalflag from "../resources/portoflag.png";
 
 const PartnersComponent = () => {
 
+    useEffect(() => {
+        Aos.init({ duration: 1000, once: true });
+    }, []);
+
     return (
         <div className="partners-page">
-            <div className="partners-page-description">
+            <div className="partners-page-description" data-aos="fade-in">
                 <div className="description-content" style={{display: "flex", flexDirection: "column"}}>
-                    <div className="text-div">
+                    <div className="partners-text-div">
                         <h1 className="partners-title">Our Partners</h1>
                         <p className="partners-p">
                         SMARTIE collaborates with a diverse network of universities, 

@@ -1,6 +1,9 @@
 import React from "react";
 import { Card, CardBody, CardText } from "reactstrap";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import "../styles/NewPartnerCard.css";
 import PartnerModal from "./PartnerModal";
 
@@ -10,19 +13,23 @@ const NewPartnerCard = ({partnerImage, partnerName, countryName, partnerFlag, co
     const toggleModal = () => {
         setModalOpen(!modalOpen);
     }
+
+    React.useEffect(() => {
+        Aos.init({ duration: 500, once: true });
+    }, []);
     
     return (
         <div className="new-partner-card">
             <div className="new-partner-circle-image-wrapper">
                 <div className="new-partner-circle-image-container">
-                    <img src={partnerImage} alt={partnerName} className="new-partner-circle-image" />
+                    <img src={partnerImage} alt={partnerName} className="new-partner-circle-image" data-aos="fade-in" />
                 </div>
             </div>
             <Card className="new-partner-card-body">
                 <CardBody>
                     <div  className={`new-partner-name-and-flag-container ${!coordinator ? "coordinator-placeholder" : ""}`}>
                         <CardText className="new-partner-name">{partnerName}</CardText>
-                        <img src={partnerFlag} alt="Country Flag" className="new-partner-flag" />
+                        <img src={partnerFlag} alt="Country Flag" className="new-partner-flag" data-aos="fade-in" />
                     </div>
                     <div className="new-partner-coordinator-container">
                         {coordinator && <CardText className="new-partner-coordinator">Coordinator</CardText>}
