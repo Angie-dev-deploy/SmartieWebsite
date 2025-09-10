@@ -1,11 +1,11 @@
 /* NAVBAR */
-.navbar {
-    background-color: #1A2633 !important;
-    height: clamp(60px, 10vh, 82px) !important; 
-    padding: 0 2vw !important; 
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+.navbar.smartie-navbar {
+    background-color: var(--background-color);
+    height: clamp(60px, 10vh, 82px); 
+    padding: 0 2vw; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -18,41 +18,42 @@
 */
 
 .navbar-brand img:hover {
-    cursor: pointer !important;
+    cursor: pointer;
 }
 
 
 
 /* NAV LINKS */
-.nav-item {
+.nav-item.smartie-nav-item {
     height: auto; /* Adjust based on content */
     width: auto; /* Ensures natural sizing */
     padding: 0.5rem 1rem; /* Adds spacing */
 }
 
 /* NAV TEXT */
-.nav-link {
-    color: white !important;
+.nav-link.smartie-nav-link {
+    color: white;
     cursor: pointer;
-    font-size: clamp(1rem, 1.5vw, 1.5rem); /* Responsive font size */
+    font-size: clamp(0.5rem, 1.5vw, 1rem); /* Responsive font size */
 }
 
-.nav-link:hover {
-    color: var(--secondary-background-color) !important;
+.nav-link.smartie-nav-link:hover {
+    color: var(--secondary-background-color);
 }
 
-.contact-us{
-    border: 2px solid;
+.nav-link.smartie-nav-link.contact-us{
+    border: 2px solid var(--secondary-background-color);
     border-radius: 25px;
-    background-color: var(--secondary-background-color) !important;
-    padding: 0.2rem 1rem 0.2rem 1rem !important;
-    align-items: center !important;
-    margin-top: 0.5rem !important;
+    background-color: var(--secondary-background-color);
+    padding: 0.1rem 0.9rem 0.1rem 0.9rem !important;
+    align-items: center;
+    margin-top: 0.5rem;
 }
 
-.contact-us:hover{
-    background-color: white !important;
-    color: var(--secondary-background-color) !important;
+.nav-link.smartie-nav-link.contact-us:hover{
+    background-color: white;
+    color: var(--secondary-background-color);
+    border-color: white;
 }
 
 .navbar-toggler{
@@ -84,10 +85,10 @@
 
 /* RESPONSIVE NAV MENU (FOR SMALL SCREENS) */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .navbar {
-        flex-direction: column !important; /* Stack items vertically */
-        height: auto !important; /* Adjust height based on content */
-        padding: 1rem 0 !important; /* Add padding */
+    .navbar.smartie-navbar {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Adjust height based on content */
+        padding: 1rem 0; /* Add padding */
     }
 
     .collapse .navbar-nav {
@@ -111,14 +112,14 @@
     }
     
     /* DURING OPENING/CLOSING (animation) */
-    .collapsing {
+    /* .collapsing {
         max-height: auto !important;
         overflow: hidden !important;
         transition: max-height 0.6s ease-in-out !important;
         display: block !important;
         flex-direction: column !important;
         align-items: center !important;
-    }
+    } */
     
     
     /* WHEN FULLY OPENED */
@@ -145,32 +146,38 @@
         width: 100% !important; /* Full width menu */
     }
 
-    .nav-brand {
-        width: 40% !important; /* Smaller logo on mobile */
+    .smartie-nav-brand.navbar-brand{
+        width: 20%; /* Auto width for logo */
     }
 
-    .nav-item {
-        text-align: center !important; /* Center text */
-        width: 100% !important; /* Full width menu */
+    .smartie-nav-brand.navbar-brand img {
+        width: 20%; /* Smaller logo on mobile */
+        height: auto;
     }
 
-    .nav-link {
-        font-size: 1.2rem !important; /* Adjust font for mobile */
-        display: block !important; /* Stack links */
-        padding: 10px 0 !important; /* Add padding */
+    .nav-item.smartie-nav-item {
+        text-align: center; /* Center text */
+        width: 100%; /* Full width menu */
+    }
+
+    .nav-link.nav-link.smartie-nav-link {
+        font-size: 1.2rem; /* Adjust font for mobile */
+        display: block; /* Stack links */
+        padding: 10px 0; /* Add padding */
     }
 
     .container-fluid {
-        display: block !important; /* Show container */
+        display: block !important;
+        
     }
 
 }
 
-@media screen and (max-width: 767px) {
-    .navbar {
-        flex-direction: column !important; /* Stack items vertically */
-        height: auto !important; /* Adjust height based on content */
-        padding: 1rem 0 !important; /* Add padding */
+@media screen and (max-width: 768px) {
+    .navbar.smartie-navbar {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Adjust height based on content */
+        padding: 1rem 0; /* Add padding */
     }
 
     .collapse .navbar-nav {
@@ -186,8 +193,10 @@
     .navbar-toggler {
         display: flex !important; /* Show hamburger menu */
         margin-left: auto !important; /* Move to right */
+       
     }
 
+    
         /* NORMAL CLOSED STATE */
     .collapse {
         display: none !important;
@@ -220,19 +229,25 @@
         width: 100% !important; /* Full width menu */
     }
 
-    .nav-brand {
-        width: 40% !important; /* Smaller logo on mobile */
+    .smartie-nav-brand.navbar-brand{
+        width: 60%; /* Auto width for logo */
     }
 
-    .nav-item {
-        text-align: center !important; /* Center text */
-        width: 100% !important; /* Full width menu */
+    .smartie-nav-brand.navbar-brand img {
+        width: 60%; /* Smaller logo on mobile */
+        height: auto;
     }
 
-    .nav-link {
-        font-size: 1.2rem !important; /* Adjust font for mobile */
-        display: block !important; /* Stack links */
-        padding: 10px 0 !important; /* Add padding */
+    .nav-item.smartie-nav-item {
+        text-align: center; /* Center text */
+        width: 100%; /* Full width menu */
+        padding: 0.3rem; /* Remove padding */
+    }
+
+    .nav-link.smartie-nav-link {
+        font-size: 1rem; /* Adjust font for mobile */
+        display: block; /* Stack links */
+        padding: 5px 0; /* Add padding */
     }
     
     .container-fluid {
@@ -240,7 +255,5 @@
     }
     
 }
-
-
 
 

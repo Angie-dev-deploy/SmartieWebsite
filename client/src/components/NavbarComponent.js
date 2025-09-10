@@ -48,8 +48,8 @@ function NavbarComponent(args) {
 
   return (
     <div>
-      <Navbar className='navbar' expand='lg' {...args}>
-        <NavbarBrand onClick={() => handleNavigate(ROOT.name)}>
+      <Navbar className='smartie-navbar' expand='lg' {...args}>
+        <NavbarBrand className='smartie-nav-brand' onClick={() => handleNavigate(ROOT.name)}>
             <img
                 src={lightHorizontalLogo}
                 data-aos="fade-in"
@@ -61,23 +61,23 @@ function NavbarComponent(args) {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ms-auto" navbar>
-            <NavItem>
-              <NavLink onClick={() => handleNavigate(PARTNERS.name)}>Partners</NavLink>
+            <NavItem className='smartie-nav-item'>
+              <NavLink className='smartie-nav-link' onClick={() => handleNavigate(PARTNERS.name)}>Partners</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink onClick={() => handleNavigate(OBJECTIVES.name)}>Objectives</NavLink>
+            <NavItem className='smartie-nav-item'>
+              <NavLink className='smartie-nav-link' onClick={() => handleNavigate(OBJECTIVES.name)}>Objectives</NavLink>
             </NavItem>
-            <NavItem>
-                <NavLink onClick={() => handleNavigate(ACTIVITIES.name)}>Activities</NavLink>
+            <NavItem className='smartie-nav-item'>
+                <NavLink className='smartie-nav-link' onClick={() => handleNavigate(ACTIVITIES.name)}>Activities</NavLink>
             </NavItem>
-            <NavItem>
-                <NavLink onClick={() => handleNavigate(DELIVERABLES.name)}>Deliverables</NavLink>
+            <NavItem className='smartie-nav-item'>
+                <NavLink className='smartie-nav-link' onClick={() => handleNavigate(DELIVERABLES.name)}>Deliverables</NavLink>
             </NavItem>
-            <NavItem>
-                <NavLink onClick={() => handleNavigate(MATERIALS.name)}>Materials?</NavLink>
+            <NavItem className='smartie-nav-item'>
+                <NavLink className='smartie-nav-link' onClick={() => handleNavigate(MATERIALS.name)}>Materials?</NavLink>
             </NavItem>
-            <NavItem >
-                <NavLink className='contact-us'  onClick={() => handleNavigate(CONTACTUS.name)}>Contact Us!</NavLink>
+            <NavItem className='smartie-nav-item'>
+                <NavLink className='contact-us smartie-nav-link'  onClick={() => handleNavigate(CONTACTUS.name)}>Contact Us!</NavLink>
             </NavItem>
           </Nav>
          
