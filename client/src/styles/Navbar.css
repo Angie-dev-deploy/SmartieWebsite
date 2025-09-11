@@ -47,7 +47,7 @@
     background-color: var(--secondary-background-color);
     padding: 0.1rem 0.9rem 0.1rem 0.9rem !important;
     align-items: center;
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
 }
 
 .nav-link.smartie-nav-link.contact-us:hover{
@@ -91,22 +91,22 @@
         padding: 1rem 0; /* Add padding */
     }
 
-    .collapse .navbar-nav {
-        display: none !important; /* Hide menu */
+    /* .collapse .navbar-nav {
+        display: none !important;
     }
 
     .collapse.show .navbar-nav {
-        display: flex !important; /* Show menu */
-        flex-direction: column !important; /* Stack items vertically */
-        width: 100% !important; /* Full width menu */
+        display: flex !important; 
+        flex-direction: column !important;
+        width: 100% !important; 
     }
 
     .navbar-toggler {
-        display: flex !important; /* Show hamburger menu */
-        margin-left: auto !important; /* Move to right */
+        display: flex !important; 
+        margin-left: auto !important; 
     }
 
-        /* NORMAL CLOSED STATE */
+       
     .collapse {
         display: none !important;
     }
@@ -123,81 +123,95 @@
     
     
     /* WHEN FULLY OPENED */
-    .collapse.show {
+    /* .collapse.show {
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important;
+        
         width: 100% !important;
-        max-height: 1000px !important; /* any big enough value */
+        max-height: 1000px !important; 
         overflow: hidden !important;
         background-color: var(--background-color) !important;
-    }
+    } */
+       
     
-  
-    
-    .navbar-collapse{
-        justify-content: flex-end !important;
-        background-color: var(--background-color) !important;
+
+
+    .collapse.navbar-collapse {
+        display: flex !important;
+        justify-content: center !important; /* centers horizontally */
+        align-items: center !important;     /* centers vertically */
+        width: 100% !important;
     }
 
-    .navbar-collapse.show {
-        display: flex !important; /* Show menu when toggled */
-        flex-direction: column !important; /* Stack items vertically */
-        width: 100% !important; /* Full width menu */
+    .collapse.navbar-collapse .navbar-nav {
+        display: flex !important;
+        justify-content: center !important; /* centers the links as a group */
+        width: 100%; /* span full width so justify-content can act */
     }
+
+    /* .navbar-collapse.show {
+        display: flex !important; 
+        flex-direction: column !important; 
+        width: 100% !important; 
+    } */
 
     .smartie-nav-brand.navbar-brand{
-        width: 20%; /* Auto width for logo */
+        width: 20vh; 
     }
 
     .smartie-nav-brand.navbar-brand img {
-        width: 20%; /* Smaller logo on mobile */
+        width: 20vh;
         height: auto;
     }
 
     .nav-item.smartie-nav-item {
         text-align: center; /* Center text */
         width: 100%; /* Full width menu */
+        padding: 0.1rem; /* Remove padding */
     }
 
     .nav-link.nav-link.smartie-nav-link {
-        font-size: 1.2rem; /* Adjust font for mobile */
+        font-size: 1rem; /* Adjust font for mobile */
         display: block; /* Stack links */
-        padding: 10px 0; /* Add padding */
+        padding: 0.1rem 0; /* Add padding */
     }
 
     .container-fluid {
         display: block !important;
         
+    } 
+
+    .nav-link.smartie-nav-link.contact-us{
+        margin-top: 0;
     }
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .navbar.smartie-navbar {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: row; /* Stack items vertically */
         height: auto; /* Adjust height based on content */
         padding: 1rem 0; /* Add padding */
     }
 
-    .collapse .navbar-nav {
-        display: none !important; /* Hide menu */
+    /* .collapse .navbar-nav {
+        display: none !important; 
     }
 
     .collapse.show .navbar-nav {
-        display: flex !important; /* Show menu */
-        flex-direction: column !important; /* Stack items vertically */
-        width: 100% !important; /* Full width menu */
+        display: flex !important; 
+        flex-direction: column !important;
+        width: 100% !important; 
     }
 
     .navbar-toggler {
-        display: flex !important; /* Show hamburger menu */
-        margin-left: auto !important; /* Move to right */
+        display: flex !important; 
+        margin-left: auto !important; 
        
     }
 
     
-        /* NORMAL CLOSED STATE */
+       
     .collapse {
         display: none !important;
     }
@@ -206,12 +220,12 @@
     
     
     /* WHEN FULLY OPENED */
-    .collapse.show {
+    /* .collapse.show {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         width: 100% !important;
-        max-height: 1000px !important; /* any big enough value */
+        max-height: 1000px !important;
         overflow: hidden !important;
         background-color: var(--background-color) !important;
     }
@@ -224,36 +238,47 @@
     }
 
     .navbar-collapse.show {
-        display: flex !important; /* Show menu when toggled */
-        flex-direction: column !important; /* Stack items vertically */
-        width: 100% !important; /* Full width menu */
-    }
+        display: flex !important; 
+        flex-direction: column !important; 
+        width: 100% !important; 
+    } */ 
 
     .smartie-nav-brand.navbar-brand{
-        width: 60%; /* Auto width for logo */
+        width: 20vw; 
     }
 
     .smartie-nav-brand.navbar-brand img {
-        width: 60%; /* Smaller logo on mobile */
+        width: 25vw; 
         height: auto;
     }
 
     .nav-item.smartie-nav-item {
         text-align: center; /* Center text */
         width: 100%; /* Full width menu */
-        padding: 0.3rem; /* Remove padding */
+        padding: 0.1rem; /* Remove padding */
     }
 
     .nav-link.smartie-nav-link {
-        font-size: 1rem; /* Adjust font for mobile */
+        font-size: 0.7rem; /* Adjust font for mobile */
         display: block; /* Stack links */
         padding: 5px 0; /* Add padding */
+        width: 100%;
     }
     
     .container-fluid {
         display: flex !important; /* Show container */
     }
     
+    .nav-link.smartie-nav-link.contact-us{
+        align-items: center;
+        margin-top: 0;
+        width: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
 }
 
 
