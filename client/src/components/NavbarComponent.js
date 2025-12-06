@@ -74,7 +74,7 @@ function NavbarComponent(args) {
                 <NavLink className='smartie-nav-link' onClick={() => handleNavigate(DELIVERABLES.name)}>Deliverables</NavLink>
             </NavItem>
             <NavItem className='smartie-nav-item'>
-                <NavLink className='smartie-nav-link' onClick={() => handleNavigate(MATERIALS.name)}>Materials?</NavLink>
+                <NavLink className='smartie-nav-link' onClick={() => handleNavigate(MATERIALS.name)}>Materials</NavLink>
             </NavItem>
             <NavItem className='smartie-nav-item'>
                 <NavLink className='contact-us smartie-nav-link'  onClick={() => handleNavigate(CONTACTUS.name)}>Contact Us!</NavLink>
