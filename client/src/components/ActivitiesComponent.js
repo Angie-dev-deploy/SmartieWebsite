@@ -5,6 +5,13 @@ import "aos/dist/aos.css";
 import "../styles/PageStart.css";
 import "../styles/Activities.css";
 
+import { Wikis} from '@carbon/icons-react';
+
+import ContentCard from "./ContentCard";
+
+import { webinars } from "../data/activities";
+import { Button } from "reactstrap";
+
 const ActivitiesComponent = () => {
 
     useEffect(() => {
@@ -25,7 +32,26 @@ const ActivitiesComponent = () => {
                     </div>
                 </div>
             </div>
-            
+            <div className="webinars-section" data-aos="fade-up">
+                <ContentCard title="Webinars" icon={Wikis}>
+                    <div className="webinars-list">
+                        {webinars.map((webinar, index) => (
+                            <div key={index} className="webinar-item">
+                                <Button className="register-button" style={{
+                                    "--btn-bg-color": webinar.color,
+                                    "--btn-hover-bg-color": webinar.hoverColor
+                                }}>
+                                    Register
+                                </Button>
+                                <div className="webinar-details">
+                                    <p>{webinar.date} - {webinar.title} - held by {webinar.heldBy}</p>
+                                </div>
+                                
+                            </div>
+                        ))}
+                    </div>
+                </ContentCard>
+            </div>
         </div>
     );
 }
