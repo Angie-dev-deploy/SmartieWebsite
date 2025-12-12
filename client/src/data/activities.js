@@ -2,38 +2,38 @@
 
 export const webinars = [
     {
-        date: "14 Nov 2025",
+        date: "2025-11-14",
         title: "First webinar - \"Webinar Title\" ",
         heldBy: "University of Craiova",
         color: "var(--secondary-background-color)",
-        hoverColor: "var(--activity-hover-color)",
+        disabledColor: "var(--activity-disabled-color)",
     },
     {
-        date: "3 Dec 2025",
+        date: "2025-12-03",
         title: "Second webinar - \"Webinar Title\" ",
         heldBy: "University of Craiova",
         color: "var(--secondary-background-color)",
-        hoverColor: "var(--activity-hover-color)",
+        disabledColor: "var(--activity-disabled-color)",
     },
     {
-        date: "25 Jan 2026",
+        date: "2026-01-25",
         title: "Third webinar - \"Webinar Title\" ",
         heldBy: "University of Craiova",
         color: "var(--secondary-background-color)",
-        hoverColor: "var(--activity-hover-color)",
+        disabledColor: "var(--activity-disabled-color)",
     },
     {
-        date: "20 Feb 2026",
+        date: "2026-02-20",
         title: "Fourth webinar - \"Webinar Title\" ",
         heldBy: "University of Craiova",
         color: "var(--secondary-background-color)",
-        hoverColor: "var(--activity-hover-color)",
+        disabledColor: "var(--activity-disabled-color)",
     },
     {
-        date: "2 Apr 2026",
+        date: "2026-04-02",
         title: "Fifth webinar - \"Webinar Title\" ",
         heldBy: "University of Craiova",
         color: "var(--secondary-background-color)",
-        hoverColor: "var(--activity-hover-color)",
+        disabledColor: "var(--activity-disabled-color)",
     }
 ];

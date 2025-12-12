@@ -18,6 +18,7 @@
     flex-direction: column;
 
     margin-top: 1rem;
+    padding-bottom: 5rem;
     align-items: flex-start;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .btn.register-button {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0.05rem 1rem;
     border: none;
     border-radius: 20px;
@@ -39,11 +40,17 @@
 }
 
 .btn.register-button:hover {
-    background-color: var(--btn-hover-bg-color);
+    background-color: white;
+    color: var(--secondary-background-color);
+}
+
+.btn.register-button.disabled {
+    background-color: var(--btn-disabled-bg-color);
+    color: var(--primary-text-color);
+    opacity: 1;
 }
 
 .webinar-details {
-    font-size: 1.2rem;
     text-align: left;
     display: flex;
     width: 100%;
@@ -52,6 +59,6 @@
 .webinar-details p {
 
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--secondary-text-color);
 }

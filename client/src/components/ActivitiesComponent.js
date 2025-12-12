@@ -12,6 +12,19 @@ import ContentCard from "./ContentCard";
 import { webinars } from "../data/activities";
 import { Button } from "reactstrap";
 
+function formatDate(dateISO) {
+    return new Intl.DateTimeFormat('en-GB', {
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric'
+    }).format(new Date(dateISO));
+}
+
+function isExpired(dateISO) {
+    const endOfDay = new Date(dateISO + "T23:59:59");
+    return new Date() > endOfDay.getTime();
+}
+
 const ActivitiesComponent = () => {
 
     useEffect(() => {
@@ -32,19 +45,21 @@ const ActivitiesComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="webinars-section" data-aos="fade-up">
+            <div className="webinars-section" >
                 <ContentCard title="Webinars" icon={Wikis}>
                     <div className="webinars-list">
                         {webinars.map((webinar, index) => (
                             <div key={index} className="webinar-item">
                                 <Button className="register-button" style={{
                                     "--btn-bg-color": webinar.color,
-                                    "--btn-hover-bg-color": webinar.hoverColor
-                                }}>
+                                    "--btn-disabled-bg-color": webinar.disabledColor
+                                }}
+                                disabled={isExpired(webinar.date)}
+                                >
                                     Register
                                 </Button>
                                 <div className="webinar-details">
-                                    <p>{webinar.date} - {webinar.title} - held by {webinar.heldBy}</p>
+                                    <p>{formatDate(webinar.date)} - {webinar.title} - held by {webinar.heldBy}</p>
                                 </div>
                                 
                             </div>
