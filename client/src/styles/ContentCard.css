@@ -104,39 +104,35 @@
     .content-card-container {
 
         min-width: 80vw ;
-
+        width: 80vw ;
+        max-width: 80%;
     }
 
     .content-card-title-container {
+        min-width: 80vw ;
         width: 80vw ;
-        margin: 0 auto ;
-    }
-
-    .content-card-title {
-        font-size: 1.2rem ;
-        padding: 0.5rem ;
-        height: 50px ;
-        width: 100% ;
-        display: flex ;
-        flex-direction: column ;
-        gap: 0.5rem ;
+        max-width: 80%;
         
     }
 
-    .content-card-icon{
-        padding: 1rem ;
-        width: 50px ;
-        height: 50px ;
-        left: -20px ;
+    .content-card-title {
+        font-size: 1.5rem ;
+        padding: 0.5rem ;
+        height: auto ;
+        justify-content: center;
+        text-align: center ;
     }
 
+    
+
     .content-card-icon-icon {
-        width: 3.5rem ;
-        height: 3.5rem ;
+        width: 1.5rem ;
+        height: 1.5rem ;
+
     }
 
     .content-card-content {
-        padding: 0.5rem 0 ;
+        padding: 0.5rem 0.5rem ; 
     }
 
 
@@ -148,42 +144,35 @@
     .content-card-container {
 
         min-width: 80vw ;
-
+        width: 80vw ;
+        max-width: 80%;
     }
 
     .content-card-title-container {
+        min-width: 80vw ;
         width: 80vw ;
-        margin: 0 auto ;
-    }
-
-    .content-card-title {
-        font-size: 1.2rem ;
-        padding: 0.5rem ;
-        height: 50px ;
-        align-items: center ;
-        justify-content: center ;
-        text-align: center ;
-        width: 100% ;
-        display: flex ;
-        flex-direction: column ;
-        gap: 0.5rem ;
+        max-width: 80%;
         
     }
 
-    .content-card-icon{
-        padding: 1rem ;
-        width: 50px ;
-        height: 50px ;
-        left: -20px ;
+    .content-card-title {
+        font-size: 1.5rem ;
+        padding: 0.5rem ;
+        height: auto ;
+        justify-content: center;
+        text-align: center ;
     }
 
+    
+
     .content-card-icon-icon {
-        width: 3.5rem ;
-        height: 3.5rem ;
+        width: 1.5rem ;
+        height: 1.5rem ;
+
     }
 
     .content-card-content {
-        padding: 0.5rem 0 ;
+        padding: 0.5rem 0.5rem ; 
     }
 
     
