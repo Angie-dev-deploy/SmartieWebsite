@@ -3,6 +3,7 @@ import italyflag from "../resources/italyflag.png";
 import spainflag from "../resources/spainflag.png";
 import sloveniaflag from "../resources/sloveniaflag.png";
 import dummyPDF from "../resources/dummy.pdf";
+import dummyimage from "../resources/dummyimage.png";
 
 export const webinars = [
     {
@@ -111,4 +112,34 @@ export const downloadFiles = [
         name: "SMARTIE Newsletter 3",
         link: dummyPDF,
     }
+];
+
+export const images = [
+    {
+        path: dummyimage,
+    },
+    {
+        path: dummyimage,
+    },
+    {
+        path: dummyimage,
+    },
+    {
+        path: dummyimage,
+    },
+    {
+        path: dummyimage,
+    },
+    {
+        path: dummyimage,
+    },
+    {
+        path: dummyimage,
+    },
+    {
+        path: dummyimage,
+    },
+    {
+        path: dummyimage,
+    },
 ];

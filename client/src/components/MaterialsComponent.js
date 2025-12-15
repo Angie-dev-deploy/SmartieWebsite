@@ -8,8 +8,9 @@ import "../styles/Materials.css";
 import { Folder, Image } from '@carbon/icons-react';
 
 import ContentCard from "./ContentCard";
+import ImageCardGrid from "./ImageCardGrid";
 
-import { downloadFiles } from "../data/activities";
+import { downloadFiles, images } from "../data/activities";
 import { Button } from "reactstrap";
 
 const MaterialsComponent = () => {
@@ -33,10 +34,8 @@ const MaterialsComponent = () => {
             </div>
 
             <div className="images-section">
-                <ContentCard title="Images" icon={Image}>
-                    <div className="images-placeholder">
-                        <p>Images will be available soon.</p>
-                    </div>
+                <ContentCard className="images-card-grid" title="Images" icon={Image}>
+                    <ImageCardGrid images={images.map(image => image.path)} />
                 </ContentCard>
 
             </div>

@@ -4,7 +4,7 @@
 
 }
 
-.download-files-section {
+.download-files-section, .images-section {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -13,7 +13,7 @@
     background-color: var(--background-color);
 }
 
-.download-files-list {
+.download-files-list, .images-card-grid {
     display: flex;
     flex-direction: column;
 
