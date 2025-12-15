@@ -2,6 +2,7 @@ import roflag from "../resources/roflag.png";
 import italyflag from "../resources/italyflag.png";
 import spainflag from "../resources/spainflag.png";
 import sloveniaflag from "../resources/sloveniaflag.png";
+import dummyPDF from "../resources/dummy.pdf";
 
 export const webinars = [
     {
@@ -76,5 +77,38 @@ export const meetings = [
         location: "Ljubljana, Slovenia",
         description: "meeting related to",
         heldBy: "University of Ljubljana",
+    }
+];
+
+export const downloadFiles = [
+    {
+        type: "PDF",
+        name: "SMARTIE Join Us Brochure",
+        link: dummyPDF,
+    },
+    {
+        type: "PDF",
+        name: "SMARTIE Brochure 1",
+        link: dummyPDF,
+    },
+    {
+        type: "PDF",
+        name: "SMARTIE Brochure 2",
+        link: dummyPDF,
+    },
+    {
+        type: "PDF",
+        name: "SMARTIE Newsletter 1",
+        link: dummyPDF,
+    },
+    {
+        type: "PDF",
+        name: "SMARTIE Newsletter 2",
+        link: dummyPDF,
+    },
+    {
+        type: "PDF",
+        name: "SMARTIE Newsletter 3",
+        link: dummyPDF,
     }
 ];
