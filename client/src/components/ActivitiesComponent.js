@@ -5,11 +5,11 @@ import "aos/dist/aos.css";
 import "../styles/PageStart.css";
 import "../styles/Activities.css";
 
-import { Wikis} from '@carbon/icons-react';
+import { Wikis, Calendar } from '@carbon/icons-react';
 
 import ContentCard from "./ContentCard";
 
-import { webinars } from "../data/activities";
+import { webinars, meetings } from "../data/activities";
 import { Button } from "reactstrap";
 
 function formatDate(dateISO) {
@@ -62,6 +62,25 @@ const ActivitiesComponent = () => {
                                     <p>{formatDate(webinar.date)} - {webinar.title} - held by {webinar.heldBy}</p>
                                 </div>
                                 
+                            </div>
+                        ))}
+                    </div>
+                </ContentCard>
+            </div>
+
+            <div className="meetings-section">
+                <ContentCard title="Meetings" icon={Calendar}>
+                    <div className="meetings-list">
+                        {meetings.map((meeting, index) => (
+                            <div key={index} className="meeting-item">
+                                <img 
+                                    src={meeting.flagPicture}
+                                    alt={`Flag of ${meeting.location.split(", ")[1]}`}
+                                    className="meeting-flag"
+                                />
+                                <div className="meeting-details">
+                                    <p>{formatDate(meeting.date)} - {meeting.location} - {meeting.description} held by {meeting.heldBy}</p>
+                                </div>
                             </div>
                         ))}
                     </div>

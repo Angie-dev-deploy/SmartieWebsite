@@ -4,7 +4,7 @@
 
 }
 
-.webinars-section {
+.webinars-section, .meetings-section {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -13,7 +13,7 @@
     background-color: var(--partners-background-color);
 }
 
-.webinars-list {
+.webinars-list, .meetings-list {
     display: flex;
     flex-direction: column;
 
@@ -22,7 +22,7 @@
     align-items: flex-start;
 }
 
-.webinar-item {
+.webinar-item, .meeting-item {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,21 +50,40 @@
     opacity: 1;
 }
 
-.webinar-details {
+.webinar-details, .meeting-details {
     text-align: left;
     display: flex;
     width: 100%;
 }
 
-.webinar-details p {
+.webinar-details p, .meeting-details p {
 
     margin-bottom: 0;
     font-size: 1.2rem;
     color: var(--secondary-text-color);
 }
 
+.meeting-flag {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: cover;
+}
+
+.meetings-section {
+    background-color: var(--primary-background-color);
+    
+}
+
+.meetings-list {
+    padding-left: 2rem;
+}
+
+
+
+
+
 @media screen and (max-width: 768px) {
-    .webinar-item {
+    .webinar-item, .meeting-item {
         flex-direction: column;
         align-items: flex-start;
         border-bottom: 1px solid var(--secondary-text-color);
@@ -76,16 +95,20 @@
         
     }
 
-    .webinar-details p {
+    .webinar-details p, .meeting-details p {
 
         
         font-size: 1rem;
         
     }
+
+    .meetings-list {
+        padding-left: 0;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-    .webinar-item {
+    .webinar-item, .meeting-item {
         flex-direction: column;
         align-items: flex-start;
         border-bottom: 1px solid var(--secondary-text-color);
@@ -98,10 +121,13 @@
         
     }
 
-    .webinar-details p {
+    .webinar-details p, .meeting-details p {
 
         
         font-size: 1rem;
         
+    }
+    .meetings-list {
+        padding-left: 2rem;
     }
 }
