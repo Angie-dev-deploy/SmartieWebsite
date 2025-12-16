@@ -1,16 +1,17 @@
 .image-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--card-background-color);
-    border-radius: 10px;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background: transparent;
+    width: 100%;
+    
 }
 
 .image-card-image {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
-    background-color: var(--card-image-background-color);
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
+
+

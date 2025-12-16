@@ -1,1 +1,25 @@
+/* .image-card-grid-col {
+
+} */
+
+.image-card-grid-container {
+    margin: 0 auto;
+    width: 50rem;
+}
+
+@media screen and (max-width: 768px) {
+    .image-card-grid-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .image-card-grid-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+}
 

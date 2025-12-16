@@ -4,6 +4,7 @@
 
 }
 
+
 .download-files-section, .images-section {
     display: flex;
     flex-direction: column;
@@ -13,6 +14,41 @@
     background-color: var(--background-color);
 }
 
+.images-section {
+    background-color: var(--partners-background-color);
+}
+
+.images-card-grid .content-card-content {
+  position: relative;
+}
+
+.images-card-grid:hover .content-card-content .image-card-grid-container {
+  filter: blur(10px);
+  cursor: pointer;
+}
+
+.images-card-grid .content-card-content::after {
+  content: "View more pictures";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 200ms ease;
+
+  pointer-events: none;
+  color: var(--modal-background-color);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.images-card-grid:hover .content-card-content::after {
+  opacity: 1;
+}
+
+
 .download-files-list, .images-card-grid {
     display: flex;
     flex-direction: column;
@@ -20,6 +56,10 @@
     margin-top: 1rem;
     padding-bottom: 5rem;
     align-items: flex-start;
+}
+
+.images-card-grid{
+    padding-bottom: 1rem;
 }
 
 .download-file-item {

@@ -70,9 +70,9 @@ function NavbarComponent(args) {
             <NavItem className='smartie-nav-item'>
                 <NavLink className='smartie-nav-link' onClick={() => handleNavigate(ACTIVITIES.name)}>Activities</NavLink>
             </NavItem>
-            <NavItem className='smartie-nav-item'>
+            {/* <NavItem className='smartie-nav-item'>
                 <NavLink className='smartie-nav-link' onClick={() => handleNavigate(DELIVERABLES.name)}>Deliverables</NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem className='smartie-nav-item'>
                 <NavLink className='smartie-nav-link' onClick={() => handleNavigate(MATERIALS.name)}>Materials</NavLink>
             </NavItem>
