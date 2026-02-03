@@ -59,7 +59,7 @@ const MaterialsComponent = () => {
             </div>
 
             <div className="images-section">
-                <ContentCard className="images-card-grid" title="Images" icon={Image} onClick={toggleModal}>
+                <ContentCard className="images-card-grid" title="Images and Videos" icon={Image} onClick={toggleModal}>
                     <ImageCardGrid images={visibleImages}/>
                     <ImagesScrollModal
                         className="images-scroll-modal"
@@ -78,16 +78,16 @@ const MaterialsComponent = () => {
                         {downloadFiles.map((file, index) => (
                             <div key={index} className="download-file-item">
                                 <a 
-                                    href={file.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    //href={file.link}
+                                    //target="_blank"
+                                    //rel="noopener noreferrer"
                                 >
-                                    <Button className="download-button">
+                                    <Button className="download-button" disabled={!file.link}>
                                         Download
                                     </Button>
                                 </a>
                                 <div className="download-file-details">
-                                    <p>{file.type} - {file.name}</p>
+                                    <p>{file.type ? `${file.type} - ` : ""}{file.name}</p>
                                 </div>
                                 
                             </div>

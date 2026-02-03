@@ -41,8 +41,8 @@ const ContactUsComponent = () => {
                             </div>
                         </div>
                         <div className="link-content">
-                            <a href="tel:+40777777777" className="phone-link">
-                                +40 777 777 777
+                            <a href="tel:+40722691192" className="phone-link">
+                                +40 722 691 192
                             </a>
                         </div>
                     </div>
@@ -56,8 +56,8 @@ const ContactUsComponent = () => {
                             </div>
                         </div>
                         <div className="link-content">
-                            <a href="mailto:nicusor.bancu@ucv.ro" className="email-link">
-                                nicusor.bancu@ucv.ro
+                            <a href="mailto:sorin.savu@edu.ucv.ro" className="email-link">
+                                sorin.savu@edu.ucv.ro
                             </a>
                         </div>
                     </div>

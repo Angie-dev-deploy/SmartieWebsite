@@ -85,7 +85,7 @@
 }
 
 .btn.download-button.disabled {
-    background-color: var(--btn-disabled-bg-color);
+    background-color: var(--activity-disabled-color);
     color: var(--primary-text-color);
     opacity: 1;
 }

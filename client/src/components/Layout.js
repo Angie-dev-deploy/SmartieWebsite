@@ -12,7 +12,7 @@ const Layout = (props) => {
             <Container className="main-content" tag="menu">
                 {props.children}
             </Container>
-            <SnackbarWIP open={true} />
+            <SnackbarWIP open={false} />
             <FooterComponent/>
         </div>
     );

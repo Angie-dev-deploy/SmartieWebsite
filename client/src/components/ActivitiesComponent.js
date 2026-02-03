@@ -13,6 +13,12 @@ import { webinars, meetings } from "../data/activities";
 import { Button } from "reactstrap";
 
 function formatDate(dateISO) {
+
+    const date = new Date(dateISO);
+    if (isNaN(date.getTime())) {
+        return dateISO; // return original string if invalid date format
+    }
+
     return new Intl.DateTimeFormat('en-GB', {
         day: '2-digit',
         month: 'short',
@@ -22,6 +28,11 @@ function formatDate(dateISO) {
 
 function isExpired(dateISO) {
     const endOfDay = new Date(dateISO + "T23:59:59");
+
+    if (isNaN(endOfDay.getTime())) {
+        return true; // consider non-date entries as not expired
+    }
+
     return new Date() > endOfDay.getTime();
 }
 
@@ -59,7 +70,7 @@ const ActivitiesComponent = () => {
                                     Register
                                 </Button>
                                 <div className="webinar-details">
-                                    <p>{formatDate(webinar.date)} - {webinar.title} - held by {webinar.heldBy}</p>
+                                    <p>{webinar.title}, {formatDate(webinar.date)}{webinar.heldBy ? `, held by ${webinar.heldBy}` : ""}</p>
                                 </div>
                                 
                             </div>
@@ -79,7 +90,7 @@ const ActivitiesComponent = () => {
                                     className="meeting-flag"
                                 />
                                 <div className="meeting-details">
-                                    <p>{formatDate(meeting.date)} - {meeting.location} - {meeting.description} held by {meeting.heldBy}</p>
+                                    <p>{meeting.description}, {meeting.location}, {formatDate(meeting.date)} {meeting.heldBy ? `, held by ${meeting.heldBy}` : ""}</p>
                                 </div>
                             </div>
                         ))}

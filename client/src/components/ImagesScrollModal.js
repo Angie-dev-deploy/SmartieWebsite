@@ -15,6 +15,9 @@ import "../styles/ImagesScrollModal.css";
 
 function ImagesScrollModal(props) {
   const {isOpen, toggle, className, images } = props;
+  const isVideo = (image) => {
+    return /\.(mp4|webm|ogg)$/i.test(image);
+  };
 
   useEffect(() => {
     Aos.init({ duration: 500, once: true });
@@ -40,7 +43,19 @@ function ImagesScrollModal(props) {
             <div className='modal-images-scroll-container'>
                 {images.map((image, index) => (
                     <div key={index} className='modal-image-item'>
-                        <img src={image} alt={`Activity ${index + 1}`} className='modal-image'/>
+                        { isVideo(image) ? (
+                            <video
+                                className="modal-image"
+                                src={image}
+                                controls
+                                muted
+                                loop
+                                playsInline
+                                alt={`Activity Video ${index + 1}`}
+                            />
+                        ) : (
+                          <img src={image} alt={`Activity ${index + 1}`} className='modal-image'/>
+                        )}
                     </div>
                 ))}
             </div>

@@ -12,11 +12,11 @@ const FooterComponent = () => {
         <div className="footer">
             <div className="link-container">
                 <div className="contact-links">
-                    <a href="mailto:smartie.mail@email.com" className="email-link">
-                        Email: smartie.mail@email.com
+                    <a href="mailto:sorin.savu@edu.ucv.ro" className="email-link">
+                        Email: sorin.savu@edu.ucv.ro
                     </a>
-                    <a href="tel:+40555555555" className="phone-link">
-                        Phone: +40555555555
+                    <a href="tel:+40722691192" className="phone-link">
+                        Phone: +40 722 691 192
                     </a>
                 </div>
                 <div className="social-links">
@@ -26,7 +26,7 @@ const FooterComponent = () => {
                     <a href="https://www.facebook.com/profile.php?id=61575182236472" target="_blank" rel="noopener noreferrer">
                         <LogoFacebook className="social-icon" />
                     </a>
-                    <a href="https://www.linkedin.com/in/smartie-project-6a8183362/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/smartie-project/" target="_blank" rel="noopener noreferrer">
                         <LogoLinkedin className="social-icon" />
                     </a>
                     <a href="https://x.com/SMARTIE_Project" target="_blank" rel="noopener noreferrer">

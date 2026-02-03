@@ -56,7 +56,7 @@ const PartnersComponent = () => {
                     countryName={"Romania"}
                     coordinator={true}
                     email="ionel.savu@edu.ucv.ro"
-                    phone="+40 777 777 777"
+                    phone="N/A"
                     contactPerson="Ionel-Dănuț Savu, Prof. PhD. Habil."
                     description={`University of Craiova is a Romanian prestigious institution of higher education, part of the European academic community, sharing cultural values, moral, educational and scientific aspects of it.
 
@@ -75,7 +75,7 @@ University of Craiova provide to all of its over 20,000 students excellent educa
                     partnerFlag={germanyflag}
                     countryName={"Germany"}
                     email="landinez@aceeu.org"
-                    phone="+40 777 777 777"
+                    phone="N/A"
                     contactPerson="Lina Landinez, Dr."
                     description={`An affiliate of ENQA and a full-fledged member of INQAAHE, ACEEU is an international quality assurance body dedicated to advancing higher education by supporting universities in their transformation process towards becoming more entrepreneurial and engaged. With the ultimate goal of fostering the creation of greater social, economic and cultural impacts by universities, ACEEU accredits universities around the world in its two main accreditation programmes: Entrepreneurial University Accreditation and Engaged University Accreditation. Having successfully accredited institutions in Europe, Latin America, Asia and Australia, with 20+ more institutions in the process, the Council is currently designing a departmental level accreditation, as well as a program level accreditation on 21st Century Skills.
 
@@ -90,7 +90,7 @@ Founded in 2016 as part of the University Industry Innovation Network (UIIN) in 
                     partnerFlag={portugalflag}
                     countryName={"Portugal"}
                     email="inespires@tecnico.ulisboa.pt"
-                    phone="+40 777 777 777"
+                    phone="N/A"
                     contactPerson="Inês da Fonseca Ascenso Pires, Assoc. Prof. PhD."
                     description={`Universidade de Lisboa (ULisboa) is the largest and most prestigious university in Portugal and it is one of Europe's leading universities. Notwithstanding assessment methods or criteria, ULisboa also leads the main international rankings and is amongst the 200 best universities worldwide. Heir to an academic tradition that spans over seven centuries, ULisboa acquired its current status in July 2013, following the merger of the former Universidade Técnica de Lisboa and Universidade de Lisboa.
 
@@ -98,7 +98,7 @@ ULisboa welcomes more than 7000 foreign students every year - about 14,5% of the
 
 Bringing together various academic fields, ULisboa has a privileged position for enabling the contemporary evolution of science, technology, arts and humanities.
 
-Instituto Superior Técnico (IST) is the largest and most reputed school of engineering, science and technology in Portugal. IST aims to contribute to the development of society promoting and sharing excellence in higher education in the fields of Architecture, Engineering, Science and Technology. IST offers Bachelor, Master and PhD programmes, lifelong training and develops Research, Development and Innovation activities, which are essential to provide an education based on the top international standards.`}
+Instituto Superior Técnico (IST) is the largest and most reputed school of engineering, science and technology in Portugal. IST aims to contribute to the development of society promoting and sharing excellence in higher education in the fields of Architecture, Engineering, Science and Technology. IST offers Bachelor, Master and PhD programmes, lifelong training and develops Research, Development and Innovation activities, which are essential to provide an education based on the top international standards. `}
                 />
 
                 <NewPartnerCard
@@ -107,7 +107,7 @@ Instituto Superior Técnico (IST) is the largest and most reputed school of engi
                     partnerFlag={sloveniaflag}
                     countryName={"Slovenia"}
                     email="damjan.klobcar@fs.uni-lj.si"
-                    phone="+40 777 777 777"
+                    phone="N/A"
                     contactPerson="Damjan Klobčar Assoc. Prof. PhD."
                     description={`University of Ljubljana is the oldest and largest higher education and scientific research institution in Slovenia established in 1919. It has approximately 40,000 undergraduate and postgraduate students and employs approximately 6,000 higher education teachers, researchers, assistants, and administrative staff in 23 faculties and three arts academies.
 
@@ -124,11 +124,11 @@ The University of Ljubljana has close ties with Slovenian companies and foreign 
                     partnerFlag={slovakiaflag}
                     countryName={"Slovakia"}
                     email="andrej.david@uniza.sk"
-                    phone="+40 777 777 777"
+                    phone="N/A"
                     contactPerson="Andrej Dávid, Prof. PhD."
                     description={`The University of Žilina as a public university provides education at all three levels of higher education (Bachelor's degree, Engineer/Master's degree and Doctoral degree) in both full-time and part-time forms. Approximately 7530 students currently study at seven faculties in all forms of study.
 
-Cooperation with foreign universities enables students and teachers to participate actively in international educational and research projects. Within its ERASMUS Programme, the University – as the only one in Slovakia - has been listed among 40 most successful universities of the EU in the field of teacher mobility for a ten-year period. The Faculty of Security Engineering, University of Žilina, (FSE UNIZA) prepares security engineering experts with knowledge in methods of crisis management that can identify, analyse and assess risks in various types of environments, and to manage preventive activities and adequate response. It educates crisis managers, rescue service workers and experts in managing the processes of protection of persons and property. The faculty is more than sixty years old and has established an excellent position in the professional security and safety community in Slovakia and abroad. It has developed cooperation with educational and research institutions, public administration institutions and business companies in the respective fields.`}
+Cooperation with foreign universities enables students and teachers to participate actively in international educational and research projects. Within its ERASMUS Programme, the University – as the only one in Slovakia - has been listed among 40 most successful universities of the EU in the field of teacher mobility for a ten-year period. The Faculty of Security Engineering, University of Žilina, (FSE UNIZA) prepares security engineering experts with knowledge in methods of crisis management that can identify, analyse and assess risks in various types of environments, and to manage preventive activities and adequate response. It educates crisis managers, rescue service workers and experts in managing the processes of protection of persons and property. The faculty is more than sixty years old and has established an excellent position in the professional security and safety community in Slovakia and abroad. It has developed cooperation with educational and research institutions, public administration institutions and business companies in the respective fields. `}
                 />
 
                 <NewPartnerCard
@@ -137,7 +137,7 @@ Cooperation with foreign universities enables students and teachers to participa
                     partnerFlag={italyflag}
                     countryName={"Italy"}
                     email="giuseppe.casalino@poliba.it"
-                    phone="+40 777 777 777"
+                    phone="N/A"
                     contactPerson="Giuseppe Casalino, Prof. PhD Habil."
                     description={`Politecnico di Bari is a prestigious public university located in the city of Bari, in the southern region of Puglia, Italy. The university was founded in 1990 and has since become one of the leading technical universities in Italy.
 
@@ -154,7 +154,7 @@ Politecnico di Bari is known for its high-quality education, prestigious faculty
                     partnerFlag={spainflag}
                     countryName={"Spain"}
                     email="mgsa23@uma.es"
-                    phone="+40 777 777 777"
+                    phone="N/A"
                     contactPerson="Manuel Gonzalez Sanchez, Prof. Dr."
                     description={`The University of Malaga (UMA) is one of Spain's premiere institutions of higher education (world ranking Webometrics: 424) [2021]. Since its foundation back in 1972, UMA has rapidly expanded its international presence and prestige.
 
@@ -169,13 +169,13 @@ UMA stimulates educational innovation and research by boosting the quality of it
                     partnerFlag={austriaflag}
                     countryName={"Austria"}
                     email="lisa-maria.putz-egger@fh-steyr.at"
-                    phone="+40 777 777 777"
+                    phone="N/A"
                     contactPerson="Lisa-Maria Putz-Egger, Prof. PhD."
                     description={`Being one of the strongest Universities of Applied Sciences in terms of research in the German-speaking area, the University of Applied Sciences Upper Austria (FH OOE) offers 68 internationally recognized academic degree programmes.
 
 FH OOE focuses on application-oriented and innovative research in 10 Centers of Excellence and research focal areas with partners from business to society. In 2020 FH OOE conducted 557 R&D projects, ranging from small single projects for enterprises, multi-annual projects that are financially supported by public authorities up to long-term partnerships in joint research centres, located at our schools. It participated in 30+ projects in FP7, H2020, JTIs und JRPs as beneficiary and coordinated seven of them with a turnover of about 20 million Euros a year. In 2020 the FHOOE participated in more than 50 other EU-projects funded through e.g. EFRE-INTERREG or ERA-Net as well as projects funded by national funding agencies.
 
-The transport and mobility department at the Campus Steyr is involved in numerous national and European projects and aims to support the greening of transport processes. Current projects concentrate on eco-friendly multimodal transport as well as to create knowledge and awareness for green, sustainable transport especially through education, training, and visibility of this subject`}
+The transport and mobility department at the Campus Steyr is involved in numerous national and European projects and aims to support the greening of transport processes. Current projects concentrate on eco-friendly multimodal transport as well as to create knowledge and awareness for green, sustainable transport especially through education, training, and visibility of this subject.`}
                 />
 
                 <NewPartnerCard
@@ -184,7 +184,7 @@ The transport and mobility department at the Campus Steyr is involved in numerou
                     partnerFlag={roflag}
                     countryName={"Romania"}
                     email="ioan.hosu@ubbcluj.ro"
-                    phone="+40 777 777 777"
+                    phone="N/A"
                     contactPerson="Ioan Hosu, Prof. Dr. Habi"
                     description={`Babes Bolyai University is a dynamic, but also traditional institution, with deep roots in Central Europe and strong international academic ties. Its origins date back to 1581, which makes it the oldest institution of higher education in Romania. It was named after two prominent Transylvanian scientists: the Romanian biologist Victor Babes and the Hungarian mathematician Janos Bolyai.
 
