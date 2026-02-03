@@ -10,7 +10,7 @@ import dummyimage4 from "../resources/dummyimage4.png";
 import dummyimage5 from "../resources/dummyimage5.png";
 import tm1_1 from "../resources/images/TPM 1 - 1.jpg";
 import tm1_2 from "../resources/images/TPM 1 - 2.jpg";
-import tm1_3 from "../resources/images/TPM-1-3.mp4";
+//import tm1_3 from "../resources/images/TPM-1-3.mp4";
 import tm1_4 from "../resources/images/TPM 1 - 4.jpg";
 import tm1_5 from "../resources/images/TPM 1 - 5.jpg";
 import tm1_6 from "../resources/images/TPM 1 - 6.jpg";
@@ -309,9 +309,9 @@ export const images = [
     {
         path: tm1_2,
     },
-    {
-        path: tm1_3,
-    },
+    // {
+    //     path: tm1_3,
+    // },
     {
         path: tm1_4,
     },
