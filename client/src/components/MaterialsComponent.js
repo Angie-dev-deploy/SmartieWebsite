@@ -78,9 +78,9 @@ const MaterialsComponent = () => {
                         {downloadFiles.map((file, index) => (
                             <div key={index} className="download-file-item">
                                 <a 
-                                    //href={file.link}
-                                    //target="_blank"
-                                    //rel="noopener noreferrer"
+                                    href={file?.link || '#'}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <Button className="download-button" disabled={!file.link}>
                                         Download
