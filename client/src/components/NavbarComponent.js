@@ -11,7 +11,7 @@ import {
 
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { ROOT, PARTNERS, OBJECTIVES, ACTIVITIES, DELIVERABLES, MATERIALS, CONTACTUS } from '../router/RouteNames';
+import { ROOT, PARTNERS, OBJECTIVES, ACTIVITIES, /*DELIVERABLES,*/ MATERIALS, CONTACTUS } from '../router/RouteNames';
 
 import lightHorizontalLogo from '../resources/LightHorizontal.png';
 
@@ -38,7 +38,7 @@ function NavbarComponent(args) {
   }, [location]);
 
   useEffect(() => {
-        Aos.init({ duration: 1000, once: true });
+    Aos.init({ duration: 1000, once: true });
   }, []);
 
   const handleNavigate = (path) => {
@@ -50,13 +50,13 @@ function NavbarComponent(args) {
     <div>
       <Navbar className='smartie-navbar' expand='lg' {...args}>
         <NavbarBrand className='smartie-nav-brand' onClick={() => handleNavigate(ROOT.name)}>
-            <img
-                src={lightHorizontalLogo}
-                data-aos="fade-in"
-                width="243"
-                height="72"
-                alt="Smartie"
-            />
+          <img
+            src={lightHorizontalLogo}
+            data-aos="fade-in"
+            width="243"
+            height="72"
+            alt="Smartie"
+          />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -68,19 +68,19 @@ function NavbarComponent(args) {
               <NavLink className='smartie-nav-link' onClick={() => handleNavigate(OBJECTIVES.name)}>Objectives</NavLink>
             </NavItem>
             <NavItem className='smartie-nav-item'>
-                <NavLink className='smartie-nav-link' onClick={() => handleNavigate(ACTIVITIES.name)}>Activities</NavLink>
+              <NavLink className='smartie-nav-link' onClick={() => handleNavigate(ACTIVITIES.name)}>Activities</NavLink>
             </NavItem>
             {/* <NavItem className='smartie-nav-item'>
                 <NavLink className='smartie-nav-link' onClick={() => handleNavigate(DELIVERABLES.name)}>Deliverables</NavLink>
             </NavItem> */}
             <NavItem className='smartie-nav-item'>
-                <NavLink className='smartie-nav-link' onClick={() => handleNavigate(MATERIALS.name)}>Materials</NavLink>
+              <NavLink className='smartie-nav-link' onClick={() => handleNavigate(MATERIALS.name)}>Materials</NavLink>
             </NavItem>
             <NavItem className='smartie-nav-item'>
-                <NavLink className='contact-us smartie-nav-link'  onClick={() => handleNavigate(CONTACTUS.name)}>Contact Us!</NavLink>
+              <NavLink className='contact-us smartie-nav-link' onClick={() => handleNavigate(CONTACTUS.name)}>Contact Us!</NavLink>
             </NavItem>
           </Nav>
-         
+
         </Collapse>
       </Navbar>
     </div>
