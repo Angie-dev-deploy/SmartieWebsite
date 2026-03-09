@@ -48,8 +48,6 @@ function ImagesScrollModal(props) {
                                 className="modal-image"
                                 src={image}
                                 controls
-                                muted
-                                loop
                                 playsInline
                                 alt={`Activity Video ${index + 1}`}
                             />
