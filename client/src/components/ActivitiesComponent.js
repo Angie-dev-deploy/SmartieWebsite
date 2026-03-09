@@ -1,15 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 import "../styles/PageStart.css";
 import "../styles/Activities.css";
 
-import { Wikis, Calendar } from '@carbon/icons-react';
+import { Wikis, Calendar, Image } from '@carbon/icons-react';
+
+import ImageCardGrid from "./ImageCardGrid";
+import ImagesScrollModal from "./ImagesScrollModal";
 
 import ContentCard from "./ContentCard";
 
-import { webinars, meetings } from "../data/activities";
+import { webinars, meetings, images } from "../data/activities";
 import { Button } from "reactstrap";
 
 function formatDate(dateISO) {
@@ -37,6 +40,30 @@ function isExpired(dateISO) {
 }
 
 const ActivitiesComponent = () => {
+
+    const [isSmallScreen, setIsSmallScreen] = useState(
+        window.innerWidth < 768
+    );
+
+    useEffect(() => {
+        const onResize = () => {
+        setIsSmallScreen(window.innerWidth < 768);
+        };
+
+        window.addEventListener("resize", onResize);
+        return () => window.removeEventListener("resize", onResize);
+    }, []);
+
+    const visibleImages = images
+        .slice(0, isSmallScreen ? 3 : 9)
+        .map(image => image.path);
+
+    const [ modalOpen, setModalOpen ] = useState(false);
+    const toggleModal = () => {
+        console.log("Toggling modal");
+        setModalOpen(!modalOpen);
+    }
+
 
     useEffect(() => {
         Aos.init({ duration: 1000, once: true });
@@ -97,6 +124,21 @@ const ActivitiesComponent = () => {
                     </div>
                 </ContentCard>
             </div>
+
+            <div className="images-section">
+                <ContentCard className="images-card-grid" title="Images and Videos" icon={Image} onClick={toggleModal}>
+                    <ImageCardGrid images={visibleImages}/>
+                    <ImagesScrollModal
+                        className="images-scroll-modal"
+                        isOpen={modalOpen}
+                        toggle={toggleModal}
+                        images={images.map(image => image.path)}
+                
+                    />
+                </ContentCard>
+
+            </div>
+
         </div>
     );
 }

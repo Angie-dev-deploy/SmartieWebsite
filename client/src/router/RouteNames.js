@@ -38,7 +38,7 @@ const RouteNames = [
     },
     
     {
-        name: "/materials",
+        name: "/results",
         component: <MaterialsComponent />
     },
 
@@ -78,8 +78,8 @@ export const DELIVERABLES = {
     component: <DeliverablesComponent />
 };
 
-export const MATERIALS = {
-    name: "/materials",
+export const RESULTS = {
+    name: "/results",
     component: <MaterialsComponent />
 };
 

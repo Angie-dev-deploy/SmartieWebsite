@@ -35,8 +35,12 @@ const NewPartnerCard = ({partnerImage, partnerName, countryName, partnerFlag, co
                         {coordinator && <CardText className="new-partner-coordinator">Coordinator</CardText>}
                     </div>
                     <div className="new-partner-contact-grid">
-                        <div className="contact-label">Phone:</div>
-                        <div className="contact-value">{phone}</div>
+                        {phone && phone !== "N/A" && (
+                            <>
+                                <div className="contact-label">Phone:</div>
+                                <div className="contact-value">{phone}</div>
+                            </>
+                        )}
                         <div className="contact-label">Email:</div>
                         <div className="contact-value-email">
                             {email}

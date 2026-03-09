@@ -11,7 +11,7 @@ import {
 
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { ROOT, PARTNERS, OBJECTIVES, ACTIVITIES, /*DELIVERABLES,*/ MATERIALS, CONTACTUS } from '../router/RouteNames';
+import { ROOT, PARTNERS, OBJECTIVES, ACTIVITIES, /*DELIVERABLES,*/ CONTACTUS, RESULTS } from '../router/RouteNames';
 
 import lightHorizontalLogo from '../resources/LightHorizontal.png';
 
@@ -38,12 +38,21 @@ function NavbarComponent(args) {
   }, [location]);
 
   useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
     Aos.init({ duration: 1000, once: true });
   }, []);
 
   const handleNavigate = (path) => {
     navigate(path);
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }, 100);
   };
 
   return (
@@ -74,7 +83,7 @@ function NavbarComponent(args) {
                 <NavLink className='smartie-nav-link' onClick={() => handleNavigate(DELIVERABLES.name)}>Deliverables</NavLink>
             </NavItem> */}
             <NavItem className='smartie-nav-item'>
-              <NavLink className='smartie-nav-link' onClick={() => handleNavigate(MATERIALS.name)}>Materials</NavLink>
+              <NavLink className='smartie-nav-link' onClick={() => handleNavigate(RESULTS.name)}>Results</NavLink>
             </NavItem>
             <NavItem className='smartie-nav-item'>
               <NavLink className='contact-us smartie-nav-link' onClick={() => handleNavigate(CONTACTUS.name)}>Contact Us!</NavLink>

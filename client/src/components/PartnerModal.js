@@ -43,7 +43,11 @@ function PartnerModal(props) {
             <div className='modal-partner-details'>
                
                 <div className='modal-partner-details'>
-                    <p>Phone:</p> <p>{phone}</p>
+                    {phone && phone !== "N/A" && (
+                        <>
+                            <p>Phone:</p> <p>{phone}</p>
+                        </>
+                    )}
                     <p>Email:</p> <p>{email}</p>
                     <p>Contact Person:</p> <p>{contactPerson}</p>
                 </div>

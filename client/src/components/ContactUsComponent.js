@@ -69,7 +69,7 @@ const ContactUsComponent = () => {
                                 <Wikis className="link-icon-icon" />
                             </div>
                             <div className="link-title">
-                                <p>Check out our Social Media Accounts</p>
+                                <p>Social Media Accounts</p>
                             </div>
                         </div>
                         <div className="link-content">

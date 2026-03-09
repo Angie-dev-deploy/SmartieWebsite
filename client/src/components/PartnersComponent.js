@@ -55,9 +55,9 @@ const PartnersComponent = () => {
                     partnerFlag={roflag}
                     countryName={"Romania"}
                     coordinator={true}
-                    email="ionel.savu@edu.ucv.ro"
-                    phone="N/A"
-                    contactPerson="Ionel-Dănuț Savu, Prof. PhD. Habil."
+                    email="sorin.savu@edu.ucv.ro"
+                    phone="+40 722 691 192"
+                    contactPerson="Sorin Savu, Prof. Ing. PhD."
                     description={`University of Craiova is a Romanian prestigious institution of higher education, part of the European academic community, sharing cultural values, moral, educational and scientific aspects of it.
 
 Since its founding, in 1947, University of Craiova has undertaken the mission to contribute to the development of knowledge, science and national culture, their integration into the universal patrimony.
