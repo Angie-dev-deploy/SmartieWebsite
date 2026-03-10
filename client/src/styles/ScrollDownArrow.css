@@ -1,0 +1,55 @@
+.scroll-down-arrow {
+    position: fixed;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.scroll-down-arrow.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-down-arrow.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scroll-arrow-bounce {
+    animation: bounce-arrow 1.4s ease-in-out infinite;
+}
+
+.scroll-arrow-chevron {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-right: 3px solid var(--primary-text-color);
+    border-bottom: 3px solid var(--primary-text-color);
+    transform: rotate(45deg);
+    opacity: 0.6;
+}
+
+@keyframes bounce-arrow {
+    0%, 100% { transform: translateY(0);    opacity: 0.6; }
+    50%       { transform: translateY(4px); opacity: 0.8; }
+}
+
+/* Mobile: bottom right, smaller */
+@media screen and (max-width: 768px) {
+    .scroll-down-arrow {
+        bottom: 2rem;
+        left: auto;
+        right: 1.5rem;
+        transform: none;
+    }
+
+    .scroll-arrow-chevron {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
