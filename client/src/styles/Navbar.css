@@ -11,39 +11,29 @@
     justify-content: space-between;
 }
 
-/* BRAND LOGO */
-/*.navbar-brand {
-    width: clamp(120px, 15vw, 243px); 
-    height: auto; 
-    max-height: 72px; 
-}
-*/
-
 .navbar-brand img:hover {
     cursor: pointer;
 }
 
-
-
 /* NAV LINKS */
 .nav-item.smartie-nav-item {
-    height: auto; /* Adjust based on content */
-    width: auto; /* Ensures natural sizing */
-    padding: 0.5rem 1rem; /* Adds spacing */
+    height: auto;
+    width: auto;
+    padding: 0.5rem 1rem;
 }
 
 /* NAV TEXT */
 .nav-link.smartie-nav-link {
     color: white;
     cursor: pointer;
-    font-size: clamp(0.5rem, 1.5vw, 1rem); /* Responsive font size */
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
 }
 
 .nav-link.smartie-nav-link:hover {
     color: var(--secondary-background-color);
 }
 
-.nav-link.smartie-nav-link.contact-us{
+.nav-link.smartie-nav-link.contact-us {
     border: 2px solid var(--secondary-background-color);
     border-radius: 25px;
     background-color: var(--secondary-background-color);
@@ -52,241 +42,80 @@
     margin-top: 0.4rem;
 }
 
-.nav-link.smartie-nav-link.contact-us:hover{
+.nav-link.smartie-nav-link.contact-us:hover {
     background-color: white;
     color: var(--secondary-background-color);
     border-color: white;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: none !important;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     outline: none !important;
     border: none !important;
     box-shadow: none !important;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     filter: invert(1) !important;
 }
 
-
 .smartie-navbar .navbar-collapse {
     justify-content: flex-end !important;
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
-/* Mobile: collapsed menu drops below navbar row — needs its own frosted bg */
-@media screen and (max-width: 991px) {
-    .smartie-navbar .navbar-collapse {
-        background-color: rgba(26, 38, 51, 0.82) !important;
-        backdrop-filter: blur(14px) !important;
-        -webkit-backdrop-filter: blur(14px) !important;
-        border-top: 1px solid rgba(255, 255, 255, 0.07);
-        padding: 0.5rem 0;
+/* Between 767px and 800px, have smaller padding */
+@media screen and (max-width: 800px) and (min-width: 768px) {
+    .navbar.smartie-navbar .nav-item {
+        padding: 0 1.5vw;
     }
 }
 
-
-
-/* RESPONSIVE NAV MENU (FOR SMALL SCREENS) */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .navbar.smartie-navbar {
-        flex-direction: column; /* Stack items vertically */
-        height: auto; /* Adjust height based on content */
-        padding: 1rem 0; /* Add padding */
-    }
-
-    /* .collapse .navbar-nav {
-        display: none !important;
-    }
-
-    .collapse.show .navbar-nav {
-        display: flex !important; 
-        flex-direction: column !important;
-        width: 100% !important; 
-    }
-
-    .navbar-toggler {
-        display: flex !important; 
-        margin-left: auto !important; 
-    }
-
-       
-    .collapse {
-        display: none !important;
-    }
-    
-    /* DURING OPENING/CLOSING (animation) */
-    /* .collapsing {
-        max-height: auto !important;
-        overflow: hidden !important;
-        transition: max-height 0.6s ease-in-out !important;
-        display: block !important;
-        flex-direction: column !important;
-        align-items: center !important;
-    } */
-    
-    
-    /* WHEN FULLY OPENED */
-    /* .collapse.show {
-        display: flex !important;
-        flex-direction: column !important;
-        
-        width: 100% !important;
-        max-height: 1000px !important; 
-        overflow: hidden !important;
-        background-color: var(--background-color) !important;
-    } */
-       
-    
-
-
-    .collapse.navbar-collapse {
-        display: flex !important;
-        justify-content: center !important; /* centers horizontally */
-        align-items: center !important;     /* centers vertically */
-        width: 100% !important;
-    }
-
-    .collapse.navbar-collapse .navbar-nav {
-        display: flex !important;
-        justify-content: center !important; /* centers the links as a group */
-        width: 100%; /* span full width so justify-content can act */
-    }
-
-    /* .navbar-collapse.show {
-        display: flex !important; 
-        flex-direction: column !important; 
-        width: 100% !important; 
-    } */
-
-    .smartie-nav-brand.navbar-brand{
-        width: 20vh; 
-    }
-
-    .smartie-nav-brand.navbar-brand img {
-        width: 20vh;
-        height: auto;
-    }
-
-    .nav-item.smartie-nav-item {
-        text-align: center; /* Center text */
-        width: 100%; /* Full width menu */
-        padding: 0.1rem; /* Remove padding */
-    }
-
-    .nav-link.nav-link.smartie-nav-link {
-        font-size: 1rem; /* Adjust font for mobile */
-        display: block; /* Stack links */
-        padding: 0.1rem 0; /* Add padding */
-    }
-
-    .container-fluid {
-        display: block !important;
-        
-    } 
-
-    .nav-link.smartie-nav-link.contact-us{
-        margin-top: 0;
-    }
-
-}
-
+/* Collapsed menu styling (below 768px) */
 @media screen and (max-width: 767px) {
     .navbar.smartie-navbar {
-        flex-direction: row; /* Stack items vertically */
-        height: auto; /* Adjust height based on content */
-        padding: 1rem 0; /* Add padding */
-    }
-
-    /* .collapse .navbar-nav {
-        display: none !important; 
-    }
-
-    .collapse.show .navbar-nav {
-        display: flex !important; 
-        flex-direction: column !important;
-        width: 100% !important; 
-    }
-
-    .navbar-toggler {
-        display: flex !important; 
-        margin-left: auto !important; 
-       
-    }
-
-    
-       
-    .collapse {
-        display: none !important;
-    }
-    
-
-    
-    
-    /* WHEN FULLY OPENED */
-    /* .collapse.show {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
-        max-height: 1000px !important;
-        overflow: hidden !important;
-        background-color: var(--background-color) !important;
-    }
-    
-  
-    
-    .navbar-collapse{
-        justify-content: flex-end !important;
-        background-color: var(--background-color) !important;
-    }
-
-    .navbar-collapse.show {
-        display: flex !important; 
-        flex-direction: column !important; 
-        width: 100% !important; 
-    } */ 
-
-    .smartie-nav-brand.navbar-brand{
-        width: 20vw; 
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0.5rem 1rem;
     }
 
     .smartie-nav-brand.navbar-brand img {
-        width: 25vw; 
+        width: clamp(120px, 20vw, 160px);
         height: auto;
     }
 
+    .smartie-navbar .navbar-collapse {
+        width: 100%;
+        padding: 0.5rem 0 1rem;
+        background-color: transparent !important;
+    }
+
     .nav-item.smartie-nav-item {
-        text-align: center; /* Center text */
-        width: 100%; /* Full width menu */
-        padding: 0.1rem; /* Remove padding */
+        text-align: center;
+        width: 100%;
+        padding: 0.3rem 0;
     }
 
     .nav-link.smartie-nav-link {
-        font-size: 0.7rem; /* Adjust font for mobile */
-        display: block; /* Stack links */
-        padding: 5px 0; /* Add padding */
+        font-size: 1.1rem;
+        display: block;
+        padding: 0.6rem 0;
         width: 100%;
     }
-    
-    .container-fluid {
-        display: flex !important; /* Show container */
+
+    .nav-link.smartie-nav-link:not(.contact-us) {
+        background: transparent !important;
     }
-    
-    .nav-link.smartie-nav-link.contact-us{
-        align-items: center;
+
+    .nav-link.smartie-nav-link.contact-us {
         margin-top: 0;
-        width: 5rem;
+        width: auto;
+        white-space: nowrap;
+        padding: 0.25rem 1.1rem !important;
         margin-left: auto;
         margin-right: auto;
     }
-
-    
-
 }
-
-

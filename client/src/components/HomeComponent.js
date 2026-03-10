@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import ErasmusBadge from "./ErasmusBadge";
 import Aos from "aos";
@@ -7,6 +8,7 @@ import "aos/dist/aos.css";
 import "../styles/Home.css";
 
 const HomeComponent = () => {
+    const navigate = useNavigate();
 
     useEffect(() => {
         Aos.init({ duration: 500, once: true });
@@ -21,6 +23,7 @@ const HomeComponent = () => {
             </div>
 
             <div className="home-text-div">
+                <span className="home-tag">Erasmus+ Co-Funded Project</span>
                 <h1 className="home-title">SMARTIE</h1>
                 <h4 className="home-subtitle">Synergistic Management and Advancement of Artificial Intelligence in European Higher Education</h4>
                 <p className="home-p">
@@ -29,6 +32,15 @@ const HomeComponent = () => {
                     By fostering innovation and strategic AI deployment, SMARTIE aims to equip universities, educators,
                     and students with the tools, knowledge, and infrastructure necessary to thrive in an increasingly AI-driven world.
                 </p>
+                <div className="home-cta-row">
+                    <button className="home-cta-primary" onClick={() => navigate("/objectives")}>
+                        Explore the Project
+                        <span className="home-cta-arrow">→</span>
+                    </button>
+                    <button className="home-cta-secondary" onClick={() => navigate("/partners")}>
+                        Meet our Partners
+                    </button>
+                </div>
             </div>
             <div className="erasmus-div">
                 <ErasmusBadge />

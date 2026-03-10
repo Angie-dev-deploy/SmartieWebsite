@@ -37,6 +37,7 @@ const PartnersComponent = () => {
             <div className="partners-page-description" data-aos="fade-in">
                 <div className="description-content" style={{display: "flex", flexDirection: "column"}}>
                     <div className="partners-text-div">
+                        <span className="page-tag">Erasmus+ Co-Funded Project</span>
                         <h1 className="partners-title">Our Partners</h1>
                         <p className="partners-p">
                         SMARTIE collaborates with a diverse network of universities, 

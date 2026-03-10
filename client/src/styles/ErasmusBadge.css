@@ -53,3 +53,21 @@
         font-size: 0.68rem;
     }
 }
+
+@media screen and (max-width: 385px) {
+    .erasmus-badge {
+        height: 24px;
+    }
+
+    .erasmus-badge-logo-img {
+        height: 24px;
+    }
+
+    .erasmus-badge-code-section {
+        padding: 0 8px;
+    }
+
+    .erasmus-badge-code {
+        font-size: 0.52rem;
+    }
+}

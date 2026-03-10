@@ -1,9 +1,6 @@
-.materials-bg-image{
-
-    background-image: url("../resources/materials.webp"); 
-
+.materials-bg-image {
+    background-image: url("../resources/materials.webp");
 }
-
 
 .download-files-section, .images-section {
     display: flex;
@@ -11,54 +8,46 @@
     width: 100%;
     padding-top: 7rem;
     padding-bottom: 7rem;
-    background-color: var(--partners-background-color);
+    background-color: var(--card-background-color);
 }
 
-/* .images-section {
-    background-color: var(--partners-background-color);
-} */
-
 .images-card-grid .content-card-content {
-  position: relative;
+    position: relative;
 }
 
 .images-card-grid:hover .content-card-content .image-card-grid-container {
-  filter: blur(10px);
-  cursor: pointer;
+    filter: blur(10px);
+    cursor: pointer;
 }
 
 .images-card-grid .content-card-content::after {
-  content: "View more pictures";
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  opacity: 0;
-  transition: opacity 200ms ease;
-
-  pointer-events: none;
-  color: var(--modal-background-color);
-  font-size: 2rem;
-  font-weight: 500;
+    content: "View more pictures";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 200ms ease;
+    pointer-events: none;
+    color: var(--primary-text-color);
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .images-card-grid:hover .content-card-content::after {
-  opacity: 1;
+    opacity: 1;
 }
-
 
 .download-files-list, .images-card-grid {
     display: flex;
     flex-direction: column;
-
     margin-top: 1rem;
     padding-bottom: 5rem;
     align-items: flex-start;
 }
 
-.images-card-grid{
+.images-card-grid {
     padding-bottom: 1rem;
 }
 
@@ -71,23 +60,33 @@
 }
 
 .btn.download-button {
-    font-size: 1.2rem;
-    padding: 0.05rem 1rem;
-    border: none;
-    border-radius: 20px;
+    color: #7EC8E3;
+    background: transparent;
+    border: 1px solid rgba(126, 200, 227, 0.3);
+    border-radius: 100px;
+    padding: 0.25rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 500;
     cursor: pointer;
-    background-color: var(--secondary-background-color);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    white-space: nowrap;
 }
 
 .btn.download-button:hover {
-    background-color: white;
-    color: var(--secondary-background-color);
+    background: rgba(126, 200, 227, 0.12);
+    border-color: rgba(126, 200, 227, 0.6);
+    color: #D9EBFF;
+    transform: none;
+    box-shadow: none;
 }
 
 .btn.download-button.disabled {
-    background-color: var(--activity-disabled-color);
-    color: var(--primary-text-color);
-    opacity: 1;
+    background-color: transparent;
+    border: 1px solid rgba(163, 183, 204, 0.15);
+    color: var(--secondary-text-color);
+    opacity: 0.5;
+    box-shadow: none;
+    cursor: default;
 }
 
 .download-file-details {
@@ -97,32 +96,26 @@
 }
 
 .download-file-details p {
-
     margin-bottom: 0;
     font-size: 1.2rem;
     color: var(--secondary-text-color);
 }
 
-
 @media screen and (max-width: 768px) {
     .download-file-item {
         flex-direction: column;
         align-items: flex-start;
-        border-bottom: 1px solid var(--secondary-text-color);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         padding-bottom: 1rem;
-        width: 100%;    
+        width: 100%;
     }
 
     .btn.download-button {
         font-size: 1rem;
-        
     }
 
     .download-file-details p {
-
-        
         font-size: 1rem;
-        
     }
 
     .download-files-list {
@@ -134,22 +127,19 @@
     .download-file-item {
         flex-direction: column;
         align-items: flex-start;
-        border-bottom: 1px solid var(--secondary-text-color);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         padding-bottom: 1rem;
         width: 100%;
     }
 
     .btn.download-button {
         font-size: 1rem;
-        
     }
 
     .download-file-details p {
-
-        
         font-size: 1rem;
-        
     }
+
     .download-files-list {
         padding-left: 2rem;
     }

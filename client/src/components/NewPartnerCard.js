@@ -41,23 +41,19 @@ const NewPartnerCard = ({
       </div>
       <Card className="new-partner-card-body">
         <CardBody>
-          <div
-            className={`new-partner-name-and-flag-container ${!coordinator ? "coordinator-placeholder" : ""}`}
-          >
-            <CardText className="new-partner-name">{partnerName}</CardText>
+          <div className="new-partner-name-and-flag-container">
+            <div className="new-partner-name-row">
+              <CardText className="new-partner-name">{partnerName}</CardText>
+              {coordinator && (
+                <span className="new-partner-coordinator">Coordinator</span>
+              )}
+            </div>
             <img
               src={partnerFlag}
               alt="Country Flag"
               className="new-partner-flag"
               data-aos="fade-in"
             />
-          </div>
-          <div className="new-partner-coordinator-container">
-            {coordinator && (
-              <CardText className="new-partner-coordinator">
-                Coordinator
-              </CardText>
-            )}
           </div>
           <div className="new-partner-contact-grid">
             <div className="contact-label">Email:</div>

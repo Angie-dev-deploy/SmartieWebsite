@@ -4,7 +4,15 @@
 
 /* Responsive Text */
 .contactus-title {
-    font-size: clamp(2.5rem, 5vw, 6rem) ; 
+    font-family: 'Goldman', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 6rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: linear-gradient(130deg, #D9EBFF 20%, #7EC8E3 60%, #A67CF7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 24px rgba(126, 200, 227, 0.2));
 }
 
 .contactus-p {
@@ -37,9 +45,8 @@
 }
 
 .contactus-link-container {
-
     padding: 5rem;
-    background-color: var(--card-image-background-color);
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -54,18 +61,18 @@
     margin-bottom: 2rem;
 }
 
-.link-icon{
-    background-color: var(--card-image-background-color);
+.link-icon {
+    background-color: var(--card-background-color);
     position: absolute;
-   
     left: -25px;
-    border-radius: 100% ;
-    border: 1px solid var(--background-color);
+    border-radius: 100%;
+    border: 1px solid rgba(126, 200, 227, 0.25);
     padding: 1.5rem;
-    color: black;
+    color: #7EC8E3;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 16px rgba(126, 200, 227, 0.1);
 }
 
 .link-icon-icon {
@@ -108,17 +115,19 @@
 
 /* Title part with icon */
 .link-title {
-    background-color: var(--card-image-background-color);
-    color: black;
-    border-radius: 10px;
-    border: 1px solid var(--background-color);
+    background: linear-gradient(90deg, #1a3a5c 0%, #1A2633 100%);
+    color: var(--primary-text-color);
+    border-radius: 12px;
+    border: 1px solid rgba(126, 200, 227, 0.18);
+    border-left: 3px solid #7EC8E3;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
     padding: 0;
 }
 
@@ -164,9 +173,10 @@
 /* Contact info */
 .link-content a {
     text-decoration: none;
-    color: var(--card-image-background-color);
+    color: #7EC8E3;
     font-size: 1.3rem;
     font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 .link-content a:hover {
@@ -222,9 +232,9 @@
     .contactus-page-description {
         flex-direction: column; /* Stack items vertically */
         margin-top: 50px ;
-        align-items: center ;
+        align-items: flex-start ;
         justify-content: flex-start;
-        text-align: center ;
+        text-align: left ;
 
         height: 100% ;
         padding-bottom: 60vh ;
@@ -237,10 +247,9 @@
     }
 
     .contactus-text-div {
-        width: 90%; /* 90% of the screen width */
-        text-align: center;
-        
-        
+        width: 90%;
+        text-align: left;
+        margin-top: 2vh;
     }
 
     .contactus-title {
@@ -302,22 +311,20 @@
 
 
     .social-row {
-        gap: 2rem ;
-        width: 100% ;
-        flex-wrap: wrap ;
-        justify-content: center ;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
     }
 
     .social-row a {
-        font-size: 1.2rem ;
-        min-width: unset ;
+        font-size: 1.2rem;
+        min-width: unset;
     }
 
     .social-text {
-        font-size: 1.2rem ;
-
+        font-size: 1.2rem;
         margin: 0;
-        text-align: center;
+        text-align: left;
     }
 
     .email-link, .phone-link{
@@ -336,25 +343,25 @@
     .contactus-page-description {
         flex-direction: column; /* Stack items vertically */
         margin-top: 50px ;
-        align-items: center ;
+        align-items: flex-start ;
         justify-content: flex-start;
-        text-align: center ;
+        text-align: left ;
 
         height: 100% ;
-        padding-bottom: 60vh ;
+        padding-bottom: 75vh ;
 
         background-image: url("../resources/phoneimage.webp");
-        background-size: 70vw;
-        background-position: bottom center;
+        background-size: 50vw;
+        background-position: bottom 5vh center;
         background-repeat: no-repeat;
-  
+
     }
 
     .contactus-text-div {
         width: 90%; /* 90% of the screen width */
-        text-align: center;
-        
-        
+        text-align: left;
+
+
     }
 
     .contactus-title {
@@ -388,9 +395,9 @@
         font-size: 1.2rem ;
         padding: 0.5rem ;
         height: 50px ;
-        align-items: center ;
+        align-items: flex-start ;
         justify-content: center ;
-        text-align: center ;
+        text-align: left ;
         width: 100% ;
         display: flex ;
         flex-direction: column ;
@@ -416,22 +423,20 @@
 
 
     .social-row {
-        gap: 2rem ;
-        width: 100% ;
-        flex-wrap: wrap ;
-        justify-content: center ;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
     }
 
     .social-row a {
-        font-size: 1.2rem ;
-        min-width: unset ;
+        font-size: 1.2rem;
+        min-width: unset;
     }
 
     .social-text {
-        font-size: 1.2rem ;
-
+        font-size: 1.2rem;
         margin: 0;
-        text-align: center;
+        text-align: left;
     }
 
     .email-link, .phone-link{

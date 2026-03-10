@@ -1,6 +1,5 @@
 .specific-card {
     width: 90%;
-
     margin: 20px;
     display: flex;
     flex-direction: row;
@@ -17,48 +16,45 @@
 
 .specific-circle-image-container {
     height: 100px;
-    aspect-ratio: 1; /* maintains square aspect ratio */
+    aspect-ratio: 1;
     border-radius: 50%;
-    border: 2px solid black;
-    background-color: var(--card-image-background-color);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: var(--card-background-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* prevents overflow from image */
+    overflow: hidden;
+    box-shadow: 0 0 18px rgba(126, 200, 227, 0.1);
 }
-
-/* .circle-image {
-    width: 150px; 
-    height: 150px;
-    object-fit: contain;
-    border-radius: 50%;
-} */
-
 
 .specific-card-body {
     background-color: var(--card-background-color) !important;
+    border: 1px solid rgba(255, 255, 255, 0.07) !important;
     color: var(--primary-text-color);
-    border-radius: 15px !important;
+    border-radius: 16px !important;
     text-align: center;
     height: 100px !important;
     width: 100%;
     padding-left: 100px;
     display: flex;
     flex-direction: row;
-    flex: 1; /* fills remaining space */
-    overflow: hidden; /* hide overflow content */
+    flex: 1;
+    overflow: hidden;
 }
 
 .specific-title {
     font-size: 1.2rem;
-    color: white !important;
+    color: var(--primary-text-color) !important;
 }
 
-.specific-number{
-    color: black !important;
+.specific-number {
     font-size: 3rem;
-    font-family: goldman, sans-serif;
+    font-family: Goldman, sans-serif;
     margin-bottom: 0;
+    background: linear-gradient(130deg, #D9EBFF 20%, #7EC8E3 60%, #A67CF7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .specific-text {
@@ -70,16 +66,16 @@
 @media screen and (max-width: 768px) {
     .specific-card {
         flex-direction: column;
-        height: 360px; 
+        height: auto;
         width: 70vw;
-        margin: 80px 0; 
+        margin: 80px 0;
         align-items: center;
     }
 
     .specific-circle-image-wrapper {
-        top: -100px; 
-        left: 50%;   
-        transform: translateX(-50%); /* perfectly center it */
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .specific-circle-image-container {
@@ -93,47 +89,40 @@
     }
 
     .specific-card-body {
-        padding-top: 60px; 
-        padding-left: 0px;
-        min-height: 250px;
-    }
-    
-    .specific-title {
-        font-size: 1.5rem; 
-    }
-    
-    .specific-text {
-        font-size: 1.5rem;
-        
+        height: auto !important;
+        min-height: unset;
+        padding-top: 60px;
+        padding-left: 0;
     }
 
+    .specific-title {
+        font-size: 1.5rem;
+    }
+
+    .specific-text {
+        font-size: 0.95rem;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .specific-card {
         flex-direction: column;
-        height: 360px; 
+        height: auto;
         width: 70vw;
-        margin: 80px 0; 
+        margin: 80px 0;
         align-items: center;
     }
 
     .specific-circle-image-wrapper {
-        top: -100px; 
-        left: 50%;   
-        transform: translateX(-50%); /* perfectly center it */
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .specific-circle-image-container {
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        border: 2px solid black;
-        background-color: var(--card-image-background-color);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden; /* prevents overflow from image */
     }
 
     .specific-circle-image {
@@ -143,18 +132,16 @@
 
     .specific-card-body {
         margin-top: 20px;
-        padding-top: 60px; 
-        padding-left: 0px;
+        padding-top: 60px;
+        padding-left: 0;
         min-height: 250px;
     }
-    
+
     .specific-title {
-        font-size: 1.5rem; 
-    }
-    
-    .specific-text {
         font-size: 1.5rem;
-        
     }
 
+    .specific-text {
+        font-size: 1.5rem;
+    }
 }

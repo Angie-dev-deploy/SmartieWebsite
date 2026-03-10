@@ -18,6 +18,7 @@ const ContactUsComponent = () => {
             <div className="contactus-page-description" data-aos="fade-in">
                 <div className="contactus-content" style={{display: "flex", flexDirection: "column"}}>
                     <div className="contactus-text-div">
+                        <span className="page-tag">Erasmus+ Co-Funded Project</span>
                         <h1 className="contactus-title">Contact Us!</h1>
                         <p className="contactus-p">
                         Get in touch with our team - we're here to help with any questions, 

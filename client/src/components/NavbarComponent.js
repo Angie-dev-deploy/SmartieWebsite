@@ -57,7 +57,7 @@ function NavbarComponent(args) {
 
   return (
     <div>
-      <Navbar className='smartie-navbar' expand='lg' {...args}>
+      <Navbar className='smartie-navbar' expand="lg" {...args}>
         <NavbarBrand className='smartie-nav-brand' onClick={() => handleNavigate(ROOT.name)}>
           <img
             src={lightHorizontalLogo}

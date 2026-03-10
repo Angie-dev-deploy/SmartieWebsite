@@ -9,7 +9,7 @@ import SnackbarWIP from "./SnackbarWIP";
 const Layout = (props) => {
     return (
         <div>
-            <NavbarComponent expand="sm" fixed="top"/>
+            <NavbarComponent expand="md" fixed="top"/>
             <Container className="main-content" tag="menu">
                 {props.children}
             </Container>

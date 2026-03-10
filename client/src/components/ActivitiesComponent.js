@@ -74,6 +74,7 @@ const ActivitiesComponent = () => {
             <div className="page-description activities-bg-image" data-aos="fade-in">
                 <div className="page-content" style={{display: "flex", flexDirection: "column"}}>
                     <div className="page-text-div">
+                        <span className="page-tag">Erasmus+ Co-Funded Project</span>
                         <h1 className="page-title">Activities</h1>
                         <p className="page-p">
                         Explore the activities of the SMARTIE project and discover how we turn innovation into impact. 

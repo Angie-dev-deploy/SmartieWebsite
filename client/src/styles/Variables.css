@@ -1,3 +1,19 @@
+/* ── Shared tag chip (used across page titles) ── */
+.page-tag {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(126, 200, 227, 0.1);
+    border: 1px solid rgba(126, 200, 227, 0.35);
+    border-radius: 100px;
+    padding: 0.28rem 0.9rem;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #7EC8E3;
+    margin-bottom: 0.6rem;
+}
+
 :root{
     --primary-text-color: #D9EBFF;
     --secondary-text-color: #A3B7CC;

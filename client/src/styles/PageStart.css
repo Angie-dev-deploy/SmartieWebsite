@@ -4,7 +4,15 @@
 
 /* Responsive Text */
 .page-title {
-    font-size: clamp(2.5rem, 5vw, 6rem) ; 
+    font-family: 'Goldman', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 6rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: linear-gradient(130deg, #D9EBFF 20%, #7EC8E3 60%, #A67CF7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 24px rgba(126, 200, 227, 0.2));
 }
 
 .page-p {
@@ -37,70 +45,63 @@
 
 @media screen and (max-width: 768px) {
     .page-description {
-        flex-direction: column; /* Stack items vertically */
-        margin-top: 50px ;
-        align-items: center ;
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: flex-start;
         justify-content: flex-start;
-        text-align: center ;
-
-        height: 100% ;
-        padding-bottom: 60vh ;
-
+        text-align: left;
+        height: 100%;
+        padding-bottom: 60vh;
         background-size: 70vw;
         background-position: bottom 10vh center;
         background-repeat: no-repeat;
-  
     }
 
     .page-text-div {
-        width: 90%; /* 90% of the screen width */
-        text-align: center;
-        
-        
+        width: 90%;
+        margin-left: 5vw;
+        margin-top: 2vh;
+        text-align: left;
     }
 
     .page-title {
-        font-size: clamp(2rem, 5vw, 3rem) ;
-        margin-bottom: 3vh ;
+        font-size: clamp(2rem, 10vw, 3rem);
+        margin-bottom: 3vh;
     }
 
     .page-p {
-        font-size: clamp(1rem, 3vw, 1.5rem) ;
-        text-align: left ;
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        text-align: left;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .page-description {
-        flex-direction: column; /* Stack items vertically */
-        margin-top: 50px ;
-        align-items: center ;
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: flex-start;
         justify-content: flex-start;
-        text-align: center ;
-
-        height: 100% ;
-        padding-bottom: 60vh ;
-
-        background-size: 70vw;
-        background-position: bottom center;
+        text-align: left;
+        height: 100%;
+        padding-bottom: 75vh;
+        background-size: 60vw;
+        background-position: bottom 5vh center;
         background-repeat: no-repeat;
-  
     }
 
     .page-text-div {
-        width: 90%; /* 90% of the screen width */
-        text-align: center;
-        
-        
+        width: 90%;
+        margin-left: 5vw;
+        text-align: left;
     }
 
     .page-title {
-        font-size: clamp(2rem, 5vw, 3rem) ;
-        margin-bottom: 3vh ;
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin-bottom: 3vh;
     }
 
     .page-p {
-        font-size: clamp(1rem, 3vw, 1.5rem) ;
-        text-align: left ;
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        text-align: left;
     }
 }

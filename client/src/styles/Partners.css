@@ -1,10 +1,17 @@
-.partners-text-div{
+.partners-text-div {
     color: var(--primary-text-color);
 }
 
-/* Responsive Text */
 .partners-title {
+    font-family: 'Goldman', sans-serif;
     font-size: clamp(2.5rem, 5vw, 6rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: linear-gradient(130deg, #D9EBFF 20%, #7EC8E3 60%, #A67CF7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 24px rgba(126, 200, 227, 0.2));
 }
 
 .partners-p {
@@ -12,63 +19,54 @@
     font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
-.partners-text-div{
+.partners-text-div {
     width: clamp(400px, 50vw, 850px);
     margin-left: 5vw;
     margin-top: 10vh;
 }
 
-.partners-page-description{
-
+.partners-page-description {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
     width: 100%;
-
     flex-wrap: wrap;
-
-    background-image: url("../resources/earth.webp"); 
+    background-image: url("../resources/earth.webp");
     background-size: 40%;
     background-position: right 50px top 100px;
     background-repeat: no-repeat;
-
     padding-top: 5vh;
 }
 
-.partner-cards{
+.partner-cards {
     padding-top: 25vh;
     padding-bottom: 15vh;
     padding-left: 37px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--partners-background-color);
+    background-color: var(--card-background-color);
     gap: 50px;
     width: 100%;
 }
 
 @media screen and (max-width: 768px) {
     .partners-page-description {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         margin-top: 50px;
-        align-items: center;
-
-        text-align: center;
-
+        align-items: flex-start;
+        text-align: left;
         height: 100%;
         padding-bottom: 60vh;
-
-        background-image: url("../resources/earth.webp");
         background-size: 70vw;
         background-position: bottom 10vh center;
-        background-repeat: no-repeat;
-  
     }
 
     .partners-text-div {
-        width: 90%; /* 90% of the screen width */
-        text-align: center;
+        width: 90%;
+        text-align: left;
+        margin-top: 2vh;
     }
 
     .partners-title {
@@ -84,31 +82,26 @@
     .partner-cards {
         padding-top: 10vh;
         padding-bottom: 5vh;
+        padding-left: 40px;
+        justify-content: center;
     }
-
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .partners-page-description {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         margin-top: 50px;
-        align-items: center;
-
-        text-align: center;
-
+        align-items: flex-start;
+        text-align: left;
         height: 100%;
-        padding-bottom: 60vh;
-
-        background-image: url("../resources/earth.webp");
-        background-size: 70vw;
-        background-position: bottom center;
-        background-repeat: no-repeat;
-  
+        padding-bottom: 75vh;
+        background-size: 60vw;
+        background-position: bottom 5vh center;
     }
 
     .partners-text-div {
-        width: 90%; /* 90% of the screen width */
-        text-align: center;
+        width: 90%;
+        text-align: left;
     }
 
     .partners-title {
@@ -125,7 +118,4 @@
         padding-top: 10vh;
         padding-bottom: 5vh;
     }
-
-    
-    
 }

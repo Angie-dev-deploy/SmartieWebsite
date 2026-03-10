@@ -1,7 +1,5 @@
-.activities-bg-image{
-
-    background-image: url("../resources/activities.webp"); 
-
+.activities-bg-image {
+    background-image: url("../resources/activities.webp");
 }
 
 .webinars-section, .meetings-section {
@@ -10,13 +8,16 @@
     width: 100%;
     padding-top: 7rem;
     padding-bottom: 7rem;
-    background-color: var(--partners-background-color);
+    background-color: var(--card-background-color);
+}
+
+.meetings-section {
+    background-color: var(--background-color);
 }
 
 .webinars-list, .meetings-list {
     display: flex;
     flex-direction: column;
-
     margin-top: 1rem;
     padding-bottom: 5rem;
     align-items: flex-start;
@@ -31,23 +32,32 @@
 }
 
 .btn.register-button {
-    font-size: 1.2rem;
-    padding: 0.05rem 1rem;
+    font-size: 0.95rem;
+    padding: 0.35rem 1.1rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 100px;
     cursor: pointer;
-    background-color: var(--btn-bg-color);
+    background-color: var(--secondary-background-color);
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 0 16px rgba(0, 123, 255, 0.25);
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn.register-button:hover {
-    background-color: white;
-    color: var(--secondary-background-color);
+    background-color: #1a8cff;
+    transform: translateY(-1px);
+    box-shadow: 0 0 24px rgba(0, 123, 255, 0.45);
+    color: white;
 }
 
 .btn.register-button.disabled {
-    background-color: var(--btn-disabled-bg-color);
-    color: var(--primary-text-color);
+    background-color: transparent;
+    border: 1px solid rgba(163, 183, 204, 0.25);
+    color: var(--secondary-text-color);
     opacity: 1;
+    box-shadow: none;
+    cursor: default;
 }
 
 .webinar-details, .meeting-details {
@@ -57,7 +67,6 @@
 }
 
 .webinar-details p, .meeting-details p {
-
     margin-bottom: 0;
     font-size: 1.2rem;
     color: var(--secondary-text-color);
@@ -69,37 +78,24 @@
     object-fit: cover;
 }
 
-.meetings-section {
-    background-color: var(--primary-background-color);
-    
-}
-
 .meetings-list {
     padding-left: 2rem;
 }
-
-
-
-
 
 @media screen and (max-width: 768px) {
     .webinar-item, .meeting-item {
         flex-direction: column;
         align-items: flex-start;
-        border-bottom: 1px solid var(--secondary-text-color);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         padding-bottom: 1rem;
     }
 
     .btn.register-button {
         font-size: 1rem;
-        
     }
 
     .webinar-details p, .meeting-details p {
-
-        
         font-size: 1rem;
-        
     }
 
     .meetings-list {
@@ -111,22 +107,19 @@
     .webinar-item, .meeting-item {
         flex-direction: column;
         align-items: flex-start;
-        border-bottom: 1px solid var(--secondary-text-color);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         padding-bottom: 1rem;
         width: 100%;
     }
 
     .btn.register-button {
         font-size: 1rem;
-        
     }
 
     .webinar-details p, .meeting-details p {
-
-        
         font-size: 1rem;
-        
     }
+
     .meetings-list {
         padding-left: 2rem;
     }

@@ -23,6 +23,7 @@ const MaterialsComponent = () => {
             <div className="page-description materials-bg-image" data-aos="fade-in">
                 <div className="page-content" style={{display: "flex", flexDirection: "column"}}>
                     <div className="page-text-div">
+                        <span className="page-tag">Erasmus+ Co-Funded Project</span>
                         <h1 className="page-title">Results</h1>
                         <p className="page-p">
                         Browse the collection of materials developed within the SMARTIE project. 

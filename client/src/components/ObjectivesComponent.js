@@ -19,6 +19,7 @@ const ObjectivesComponent = () => {
             <div className="objectives-page-description" data-aos="fade-in">
                 <div className="description-content" style={{display: "flex", flexDirection: "column"}}>
                     <div className="objectives-text-div">
+                        <span className="page-tag">Erasmus+ Co-Funded Project</span>
                         <h1 className="objectives-title">Objectives</h1>
                         <p className="objectives-p">
                         SMARTIE aims to empower higher education institutions across Europe to responsibly 
