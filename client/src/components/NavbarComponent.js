@@ -13,7 +13,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 import { ROOT, PARTNERS, OBJECTIVES, ACTIVITIES, /*DELIVERABLES,*/ CONTACTUS, RESULTS } from '../router/RouteNames';
 
-import lightHorizontalLogo from '../resources/LightHorizontal.png';
+import lightHorizontalLogo from '../resources/LightHorizontal.webp';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';

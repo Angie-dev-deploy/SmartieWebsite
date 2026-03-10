@@ -1,12 +1,14 @@
 /* NAVBAR */
 .navbar.smartie-navbar {
-    background-color: var(--background-color);
-    height: clamp(60px, 10vh, 82px); 
-    padding: 0 2vw; 
+    background-color: rgba(26, 38, 51, 0.82);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    height: clamp(60px, 10vh, 82px);
+    padding: 0 2vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 /* BRAND LOGO */
@@ -71,14 +73,20 @@
 }
 
 
-.collapse{
+.smartie-navbar .navbar-collapse {
     justify-content: flex-end !important;
-    background-color: var(--background-color) !important;
+    background-color: transparent !important;
 }
 
-.navbar-collapse{
-    justify-content: flex-end !important;
-    background-color: var(--background-color) !important;
+/* Mobile: collapsed menu drops below navbar row — needs its own frosted bg */
+@media screen and (max-width: 991px) {
+    .smartie-navbar .navbar-collapse {
+        background-color: rgba(26, 38, 51, 0.82) !important;
+        backdrop-filter: blur(14px) !important;
+        -webkit-backdrop-filter: blur(14px) !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 0.5rem 0;
+    }
 }
 
 
