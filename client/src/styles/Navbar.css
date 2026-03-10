@@ -1,4 +1,12 @@
 /* NAVBAR */
+.navbar.smartie-navbar,
+.navbar.smartie-navbar[data-aos],
+.navbar.smartie-navbar.aos-animate {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+}
+
 .navbar.smartie-navbar {
     background-color: rgba(26, 38, 51, 0.82);
     backdrop-filter: blur(14px);

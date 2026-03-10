@@ -4,4 +4,6 @@
     width: 100 !important;
     max-width: 100vw !important;
     overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }

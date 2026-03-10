@@ -13,6 +13,7 @@ const isVideoPath = (path) => /\.(mp4|webm|ogg)$/i.test(path);
 
 const GalleryComponent = () => {
     const [modalOpen, setModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState([]);
     const videoRef = useRef(null);
 
     const photos = images.filter(item => !isVideoPath(item.path));
@@ -86,7 +87,7 @@ const GalleryComponent = () => {
                             <div
                                 key={index}
                                 className="gallery-photo-item"
-                                onClick={() => setModalOpen(true)}
+                                onClick={() => { setSelectedImage([item.path]); setModalOpen(true); }}
                                 data-aos="fade-up"
                             >
                                 <img src={item.path} alt={`Gallery ${index + 1}`} className="gallery-photo-img" />
@@ -102,7 +103,7 @@ const GalleryComponent = () => {
             <ImagesScrollModal
                 isOpen={modalOpen}
                 toggle={() => setModalOpen(false)}
-                images={photos.map(item => item.path)}
+                images={selectedImage}
             />
         </div>
     );
