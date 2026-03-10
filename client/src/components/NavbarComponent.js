@@ -11,7 +11,7 @@ import {
 
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { ROOT, PARTNERS, OBJECTIVES, ACTIVITIES, /*DELIVERABLES,*/ CONTACTUS, RESULTS } from '../router/RouteNames';
+import { ROOT, PARTNERS, OBJECTIVES, ACTIVITIES, /*DELIVERABLES,*/ CONTACTUS, RESULTS, GALLERY } from '../router/RouteNames';
 
 import lightHorizontalLogo from '../resources/LightHorizontal.webp';
 
@@ -84,6 +84,9 @@ function NavbarComponent(args) {
             </NavItem> */}
             <NavItem className='smartie-nav-item'>
               <NavLink className='smartie-nav-link' onClick={() => handleNavigate(RESULTS.name)}>Results</NavLink>
+            </NavItem>
+            <NavItem className='smartie-nav-item'>
+              <NavLink className='smartie-nav-link' onClick={() => handleNavigate(GALLERY.name)}>Gallery</NavLink>
             </NavItem>
             <NavItem className='smartie-nav-item'>
               <NavLink className='contact-us smartie-nav-link' onClick={() => handleNavigate(CONTACTUS.name)}>Contact Us!</NavLink>

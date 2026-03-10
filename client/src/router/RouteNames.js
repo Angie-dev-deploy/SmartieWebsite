@@ -1,6 +1,7 @@
 import ActivitiesComponent from "../components/ActivitiesComponent";
 import ContactUsComponent from "../components/ContactUsComponent";
 import DeliverablesComponent from "../components/DeliverablesComponent";
+import GalleryComponent from "../components/GalleryComponent";
 import HomeComponent from "../components/HomeComponent"
 import MaterialsComponent from "../components/MaterialsComponent";
 import ObjectivesComponent from "../components/ObjectivesComponent";
@@ -43,6 +44,11 @@ const RouteNames = [
     },
 
     {
+        name: "/gallery",
+        component: <GalleryComponent />
+    },
+
+    {
         name: "/contactus",
         component: <ContactUsComponent />
     },
@@ -81,6 +87,11 @@ export const DELIVERABLES = {
 export const RESULTS = {
     name: "/results",
     component: <MaterialsComponent />
+};
+
+export const GALLERY = {
+    name: "/gallery",
+    component: <GalleryComponent />
 };
 
 export const CONTACTUS = {
