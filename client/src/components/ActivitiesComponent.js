@@ -77,7 +77,7 @@ const ActivitiesComponent = () => {
                         <h1 className="page-title">Activities</h1>
                         <p className="page-p">
                         Explore the activities of the SMARTIE project and discover how we turn innovation into impact. 
-                        Here you’ll find an overview of our workshops, research initiatives, student engagements, and collaborative events. 
+                        Here you'll find an overview of our workshops, research initiatives, student engagements, and collaborative events. 
                         Stay connected and follow our progress as we continue to create meaningful educational and technological experiences.
                         </p>
                     </div>

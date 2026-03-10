@@ -20,9 +20,9 @@ const ContactUsComponent = () => {
                     <div className="contactus-text-div">
                         <h1 className="contactus-title">Contact Us!</h1>
                         <p className="contactus-p">
-                        Get in touch with our team - we’re here to help with any questions, 
+                        Get in touch with our team - we're here to help with any questions, 
                         feedback, or information you may need. Whether you're curious about 
-                        the project or need assistance, don’t hesitate to reach out. We’ll 
+                        the project or need assistance, don't hesitate to reach out. We'll 
                         get back to you as soon as possible.
                         </p>
                     </div>
