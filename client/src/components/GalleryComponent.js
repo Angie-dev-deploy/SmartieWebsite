@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -15,6 +16,7 @@ const GalleryComponent = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState([]);
     const videoRef = useRef(null);
+    const location = useLocation();
 
     const photos = images.filter(item => !isVideoPath(item.path));
     const video = images.find(item => isVideoPath(item.path));
@@ -40,8 +42,10 @@ const GalleryComponent = () => {
     }, [video]);
 
     useEffect(() => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'instant' });
+        window.scrollTo({ top: 0, behavior: 'instant' });
         Aos.init({ duration: 1000, once: true });
-    }, []);
+    }, [location.pathname]);
 
     return (
         <div className="gallery-page">

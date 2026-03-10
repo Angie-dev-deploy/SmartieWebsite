@@ -3,13 +3,17 @@
     background-size: 28%;
     background-position: left 50px top 180px;
     background-repeat: no-repeat;
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
 }
+
 
 /* ── Section shared ── */
 .gallery-videos-section,
 .gallery-photos-section {
     padding: 5vh 4vw 7vh;
     background-color: var(--card-background-color);
+    touch-action: pan-y;
 }
 
 .gallery-photos-section {
@@ -43,6 +47,7 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
     background: #000;
+    touch-action: pan-y;
 }
 
 .gallery-video {
@@ -51,6 +56,7 @@
     max-height: 70vh;
     object-fit: contain;
     background: #000;
+    touch-action: pan-y;
 }
 
 /* ── Photo grid ── */
@@ -67,6 +73,7 @@
     cursor: pointer;
     aspect-ratio: 4 / 3;
     background: var(--card-background-color);
+    touch-action: pan-y;
 }
 
 .gallery-photo-img {

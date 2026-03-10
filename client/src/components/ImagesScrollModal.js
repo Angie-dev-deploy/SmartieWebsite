@@ -24,20 +24,16 @@ function ImagesScrollModal(props) {
   }, []);
 
   return (
-    <div>
-      
       <Modal
         isOpen={isOpen}
         toggle={toggle}
         className={className}
         backdrop={true}
-
       >
         <ModalHeader>
             <div className='images-modal-title'>
                 <p className='images-modal-title-text'>Pictures From Our Activities</p>
             </div>
-            
         </ModalHeader>
         <ModalBody>
             <div className='modal-images-scroll-container'>
@@ -64,7 +60,6 @@ function ImagesScrollModal(props) {
           </Button>
         </ModalFooter>
       </Modal>
-    </div>
   );
 }
 
