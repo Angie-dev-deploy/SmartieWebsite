@@ -1,0 +1,55 @@
+.erasmus-badge {
+    display: inline-flex;
+    align-items: stretch;
+    background-color: #2b3b4e;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 42px;
+    user-select: none;
+}
+
+.erasmus-badge-logo-section {
+    display: flex;
+    align-items: center;
+    background-color: #243347;
+}
+
+.erasmus-badge-logo-img {
+    height: 42px;
+    width: auto;
+}
+
+.erasmus-badge-divider {
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    flex-shrink: 0;
+}
+
+.erasmus-badge-code-section {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.erasmus-badge-code {
+    color: #d9ebff;
+    font-size: 1rem;
+    font-family: monospace;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    .erasmus-badge {
+        height: 32px;
+    }
+
+    .erasmus-badge-logo-img {
+        height: 32px;
+    }
+
+    .erasmus-badge-code {
+        font-size: 0.68rem;
+    }
+}

@@ -103,7 +103,7 @@
     100% { transform: translate(0, 0);        border-radius: 45% 55% 60% 40% / 55% 45% 50% 50%; }
 }
 
-/* ── Erasmus ── */
+/* ── Erasmus badge wrapper ── */
 .erasmus-div {
     margin-left: 2vw;
     margin-top: 8vh;
@@ -111,80 +111,85 @@
     z-index: 1;
 }
 
-.erasmus-img {
-    width: 30vw;
-    height: auto;
-}
-
 /* ── Mobile ── */
 @media screen and (max-width: 768px) {
     .home-page-content {
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
         margin-top: 0;
         text-align: center;
-        height: auto;
+        min-height: 100svh;
+        min-height: 100vh; /* fallback */
+        padding-top: 12vh;
+        padding-bottom: 0;
     }
 
     .home-text-div {
-        width: 90%;
+        width: 88%;
         text-align: center;
         margin-left: 0;
-        padding: 8vw 0;
+        margin-top: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
     }
 
     .home-title {
-        font-size: clamp(2rem, 5vw, 3rem);
+        font-size: clamp(3rem, 14vw, 5rem);
+        letter-spacing: 0.04em;
+        margin-bottom: 0;
     }
 
     .home-subtitle {
-        font-size: clamp(1rem, 4vw, 2rem);
+        font-size: clamp(0.9rem, 3.8vw, 1.3rem);
+        line-height: 1.5;
+        color: var(--secondary-text-color);
     }
 
     .home-p {
-        font-size: clamp(1rem, 3vw, 1.5rem);
-        padding-bottom: 3vh;
-        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        font-size: clamp(0.88rem, 3.2vw, 1.1rem);
+        line-height: 1.7;
         text-align: left;
+        color: var(--secondary-text-color);
+        padding: 0;
     }
 
     .erasmus-div {
-        margin-top: 0;
-        padding-bottom: 6vh;
-        margin-left: 0;
+        margin: 0;
+        padding: 4vh 0 6vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
-    .erasmus-img {
-        width: 80vw;
-    }
-
+    /* Blobs: bigger + more visible to fill the screen atmosphere */
     .blob {
-        filter: blur(55px);
-        opacity: 0.3;
+        filter: blur(60px);
+        opacity: 0.38;
     }
 
     .blob-lightblue {
-        width: 260px;
-        height: 240px;
-        top: 2%;
-        right: -10%;
+        width: 300px;
+        height: 280px;
+        top: 0%;
+        right: -8%;
     }
 
     .blob-purple {
-        width: 220px;
-        height: 240px;
-        top: 20%;
-        right: 30%;
+        width: 260px;
+        height: 280px;
+        top: 25%;
+        left: -8%;
+        right: auto;
     }
 
     .blob-mint {
-        width: 200px;
-        height: 220px;
-        top: 42%;
+        width: 240px;
+        height: 260px;
+        top: 55%;
         right: -5%;
     }
 }
@@ -193,32 +198,31 @@
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .home-page-content {
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         margin-top: 0;
         text-align: center;
-        height: auto;
+        min-height: 100svh;
+        min-height: 100vh;
     }
 
     .home-text-div {
-        width: 90%;
+        width: 80%;
         text-align: center;
         margin-left: 0;
-        padding: 8vw 0;
+        padding: 4vw 0 2vw;
     }
 
     .home-title {
-        font-size: clamp(2rem, 5vw, 3rem);
+        font-size: clamp(2.5rem, 7vw, 4.5rem);
     }
 
     .home-subtitle {
-        font-size: clamp(1rem, 4vw, 2rem);
+        font-size: clamp(1rem, 3vw, 1.8rem);
     }
 
     .home-p {
-        font-size: clamp(1rem, 3vw, 1.5rem);
-        padding-bottom: 3vh;
-        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        font-size: clamp(1rem, 2vw, 1.3rem);
         text-align: left;
     }
 
@@ -229,10 +233,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .erasmus-img {
-        width: 80vw;
     }
 
     .blob-lightblue { right: 2%; }

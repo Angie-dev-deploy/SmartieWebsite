@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import erasmus from "../resources/Erasmus.webp";
+import ErasmusBadge from "./ErasmusBadge";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -31,11 +31,7 @@ const HomeComponent = () => {
                 </p>
             </div>
             <div className="erasmus-div">
-                <img
-                    className="erasmus-img"
-                    src={erasmus}
-                    alt="erasmus"
-                />
+                <ErasmusBadge />
             </div>
         </div>
     );

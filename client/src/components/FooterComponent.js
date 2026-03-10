@@ -1,7 +1,7 @@
 import { LogoInstagram, LogoFacebook, LogoLinkedin, LogoX, LogoYoutube } from '@carbon/icons-react';
 
 import lighthorizontalLogo from "../resources/LightHorizontal.webp";
-import erasmusrightLogo from "../resources/Erasmus_right.webp";
+import ErasmusBadge from "./ErasmusBadge";
 
 import "../styles/Footer.css";
 import "../styles/FadeInAnimation.css";
@@ -37,13 +37,7 @@ const FooterComponent = () => {
                     </a>
                 </div>
                 <div className="erasmus-container">
-                    <img
-                        src={erasmusrightLogo}
-                        width="243"
-                        height="72"
-                        alt="Erasmus+"
-                        className="erasmus-logo fadeIn-animation"
-                    />
+                    <ErasmusBadge logoRight />
                 </div>
             </div>
             <div className="logo-container">
