@@ -1,7 +1,7 @@
 import { LogoInstagram, LogoFacebook, LogoLinkedin, LogoX, LogoYoutube } from '@carbon/icons-react';
 
-import lighthorizontalLogo from "../resources/LightHorizontal.png";
-import erasmusrightLogo from "../resources/Erasmus_right.png";
+import lighthorizontalLogo from "../resources/LightHorizontal.webp";
+import erasmusrightLogo from "../resources/Erasmus_right.webp";
 
 import "../styles/Footer.css";
 import "../styles/FadeInAnimation.css";

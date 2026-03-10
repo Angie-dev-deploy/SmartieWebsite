@@ -7,24 +7,24 @@ import "aos/dist/aos.css";
 
 import "../styles/Partners.css";
 
-import ucv from "../resources/ucv.png";
-import acceu from "../resources/acceu.png";
-import bari from "../resources/bari.png";
-import malaga from "../resources/malaga.png";
-import zilina from "../resources/zilina.png";
-import lisboa from "../resources/lisboa.png";
-import ljubljana from "../resources/ljubliana.png";
-import babes from "../resources/babes.png";
-import fhoo from "../resources/fhoo.png";
+import ucv from "../resources/ucv.webp";
+import acceu from "../resources/acceu.webp";
+import bari from "../resources/bari.webp";
+import malaga from "../resources/malaga.webp";
+import zilina from "../resources/zilina.webp";
+import lisboa from "../resources/lisboa.webp";
+import ljubljana from "../resources/ljubliana.webp";
+import babes from "../resources/babes.webp";
+import fhoo from "../resources/fhoo.webp";
 
-import roflag from "../resources/roflag.png";
-import germanyflag from "../resources/germanyflag.png";
-import italyflag from "../resources/italyflag.png";
-import spainflag from "../resources/spainflag.png";
-import slovakiaflag from "../resources/slovakiaflag.png";
-import sloveniaflag from "../resources/sloveniaflag.png";
-import austriaflag from "../resources/austriaflag.png";
-import portugalflag from "../resources/portoflag.png";
+import roflag from "../resources/roflag.webp";
+import germanyflag from "../resources/germanyflag.webp";
+import italyflag from "../resources/italyflag.webp";
+import spainflag from "../resources/spainflag.webp";
+import slovakiaflag from "../resources/slovakiaflag.webp";
+import sloveniaflag from "../resources/sloveniaflag.webp";
+import austriaflag from "../resources/austriaflag.webp";
+import portugalflag from "../resources/portoflag.webp";
 
 const PartnersComponent = () => {
 

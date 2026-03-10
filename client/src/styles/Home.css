@@ -34,7 +34,7 @@
 
     flex-wrap: wrap;
 
-    background-image: url("../resources/blobs.png"); 
+    background-image: url("../resources/blobs.webp"); 
     background-size: contain;
     background-position: right -100px center;
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@
         width: 100%;
         top: 150px;
         bottom: 0;
-        background-image: url("../resources/blobs.png");
+        background-image: url("../resources/blobs.webp");
         background-position: right -100px top -10px;
         background-size: contain;
         background-repeat: no-repeat;
@@ -142,7 +142,7 @@
         width: 100%;
         top: 150px;
         bottom: 0;
-        background-image: url("../resources/blobs.png");
+        background-image: url("../resources/blobs.webp");
         background-position: right -100px top -10px;
         background-size: contain;
         background-repeat: no-repeat;

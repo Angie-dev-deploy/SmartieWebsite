@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import erasmus from "../resources/Erasmus.png";
+import erasmus from "../resources/Erasmus.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

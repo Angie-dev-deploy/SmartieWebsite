@@ -28,7 +28,7 @@
 
     flex-wrap: wrap;
 
-    background-image: url("../resources/target.png"); 
+    background-image: url("../resources/target.webp"); 
     background-size: 40%;
     background-position: left 50px top 100px;
     background-repeat: no-repeat;
@@ -87,7 +87,7 @@
         height: 100%;
         padding-bottom: 60vh;
 
-        background-image: url("../resources/target.png");
+        background-image: url("../resources/target.webp");
         background-size: 70vw;
         background-position: bottom 10vh center;
         background-repeat: no-repeat;
@@ -151,7 +151,7 @@
         height: 100%;
         padding-bottom: 60vh;
 
-        background-image: url("../resources/target.png");
+        background-image: url("../resources/target.webp");
         background-size: 70vw;
         background-position: bottom center;
         background-repeat: no-repeat;
