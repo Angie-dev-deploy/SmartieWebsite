@@ -1,5 +1,3 @@
-import React from "react";
-
 import Snackbar from "@mui/material/Snackbar";
 
 const SnackbarWIP = ({ open, handleClose }) => {

@@ -1,12 +1,13 @@
-import React from "react";
 import NavbarComponent from "./NavbarComponent";
 import FooterComponent from "./FooterComponent";
 import ScrollDownArrow from "./ScrollDownArrow";
 import { Container } from "reactstrap";
 import "../styles/Layout.css";
 import SnackbarWIP from "./SnackbarWIP";
+import SnackbarVisits from "./SnackbarVisits";
 
 const Layout = (props) => {
+
     return (
         <div>
             <NavbarComponent expand="md" fixed="top"/>
@@ -15,6 +16,7 @@ const Layout = (props) => {
             </Container>
             <ScrollDownArrow />
             <SnackbarWIP open={false} />
+            <SnackbarVisits open={true} visits={props.visits} />
             <FooterComponent/>
         </div>
     );

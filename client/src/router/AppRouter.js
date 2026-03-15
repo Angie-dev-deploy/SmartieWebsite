@@ -1,12 +1,11 @@
-import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import RouteNames from "./RouteNames";
 import Layout from "../components/Layout";
 
-const AppRouter = () => {
+const AppRouter = ({ visits }) => {
     return (
         <BrowserRouter>
-            <Layout>
+            <Layout visits={visits}>
                 <Routes>
                     {RouteNames.map((route, index) => {
                         return <Route key={index} path={route.name} element={route.component} />;
