@@ -17,6 +17,16 @@ import tm1_6 from "../resources/images/TPM 1 - 6.jpg";
 import tm1_7 from "../resources/images/TPM 1 - 7.jpg";
 import tm1_8 from "../resources/images/TPM 1 - 8.jpg";
 
+import d211 from "../resources/results/D.2.1.1. Alliance for Artificial Intelligence in Higher Education - SMARTIE.pdf";
+import d212 from "../resources/results/D.2.1.2. Memorandum of Understanding.pdf";
+import d221 from "../resources/results/D.2.2.1. E-questionnaire for higher education.pdf";
+import d222 from "../resources/results/D.2.2.2. E-questionnaire for stakeholders.pdf";
+import d223 from "../resources/results/D.2.2.3. Survey among SMARTIE and other universities.pdf";
+import d224 from "../resources/results/D.2.2.4. Survey among stakeholders.pdf";
+import d225_1 from "../resources/results/D.2.2.5. Analysis of the results - Stakeholders.pdf";
+import d225_2 from "../resources/results/D.2.2.5. Analysis of the results - HEIs.pdf";
+import d226 from "../resources/results/D.2.2.6. Poll of disciplines and subjects that will be updated.pdf";
+
 
 export const webinars = [
     {
@@ -109,193 +119,331 @@ export const meetings = [
 ];
 
 export const downloadFiles = [
-    // {
-    //     type: "PDF",
-    //     name: "SMARTIE Join Us Brochure",
-    //     link: dummyPDF,
-    // },
-    // {
-    //     type: "PDF",
-    //     name: "SMARTIE Brochure 1",
-    //     link: dummyPDF,
-    // },
-    // {
-    //     type: "PDF",
-    //     name: "SMARTIE Brochure 2",
-    //     link: dummyPDF,
-    // },
-    // {
-    //     type: "PDF",
-    //     name: "SMARTIE Newsletter 1",
-    //     link: dummyPDF,
-    // },
-    // {
-    //     type: "PDF",
-    //     name: "SMARTIE Newsletter 2",
-    //     link: dummyPDF,
-    // },
-    // {
-    //     type: "PDF",
-    //     name: "SMARTIE Newsletter 3",
-    //     link: dummyPDF,
-    // },
+
     {
         type: "",
         name: "D2.1.1. Alliance for Artificial Intelligence in Higher Education - SMARTIE",
-        link: "",
+        files: [
+            {
+                title: "D2.1.1. Alliance for Artificial Intelligence in Higher Education - SMARTIE",
+                link: d211,
+            }
+        ]
     },
     {
         type: "",
         name: "D2.1.2. Memorandum of Understanding signed by legal representatives of founders of SMARTIE",
-        link: "",
+        files: [
+            {
+                title: "D2.1.2. Memorandum of Understanding signed by legal representatives of founders of SMARTIE",
+                link: d212,
+            }
+        ]
     },
     {
         type: "",
         name: "D2.2.1. E-questionnaire for higher education",
-        link: "",
+        files: [
+            {
+                title: "D2.2.1. E-questionnaire for higher education",
+                link: d221,
+            }
+        ]
     },
     {
         type: "",
         name: "D.2.2.2. E-questionnaire for stakeholders",
-        link: "",
+        files: [
+            {
+                title: "D.2.2.2. E-questionnaire for stakeholders",
+                link: d222,
+            }
+        ]
     },
     {
         type: "",
         name: "D2.2.3. Survey among SMARTIE and other universities",
-        link: "",
+        files: [
+            {
+                title: "D2.2.3. Survey among SMARTIE and other universities",
+                link: d223,
+            }
+        ]
     },
     {
         type: "",
         name: "D2.2.4. Survey among stakeholders",
-        link: "",
+        files: [
+            {
+                title: "D2.2.4. Survey among stakeholders",
+                link: d224,
+            }
+        ]
     },
     {
         type: "",
         name: "D2.2.5. Analysis of the results",
-        link: "",
-    },{
+        files: [
+            {
+                title: "Analysis of the results - Stakeholders",
+                link: d225_1,
+            },
+            {
+                title: "Analysis of the results - HEIs",
+                link: d225_2,
+            }
+        ]
+    },
+    {
         type: "",
         name: "D2.2.6. Poll of disciplines and subjects that will be updated",
-        link: "",
+        files: [
+            {
+                title: "D2.2.6. Poll of disciplines and subjects that will be updated",
+                link: d226,
+            }
+        ]
     },
     {
         type: "",
         name: "D3.1.1. Guidelines for teachers and researchers",
-        link: "",
+        files: [
+            {
+                title: "D3.1.1. Guidelines for teachers and researchers",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D3.2.1. Guidelines for students and SEND students",
-        link: "",
+        files: [
+            {
+                title: "D3.2.1. Guidelines for students and SEND students",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D3.2.2. Guidelines for general public",
-        link: "",
+        files: [
+            {
+                title: "D3.2.2. Guidelines for general public",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D3.3.1. Micro-courses updated using guideline for teachers",
-        link: "",
+        files: [
+            {
+                title: "D3.3.1. Micro-courses updated using guideline for teachers",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D3.3.2. Micro-presentations covering examples presented in guideline",
-        link: "",
+        files: [
+            {
+                title: "D3.3.2. Micro-presentations covering examples presented in guideline",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D3.3.3. Video for inclusive education of people with disabilities",
-        link: "",
+        files: [
+            {
+                title: "D3.3.3. Video for inclusive education of people with disabilities",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D3.4.1. LTT for teachers",
-        link: "",
+        files: [
+            {
+                title: "D3.4.1. LTT for teachers",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D4.1.1. National Strategies related to AI",
-        link: "",
+        files: [
+            {
+                title: "D4.1.1. National Strategies related to AI",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D4.1.2. Online survey related to draft version of European Strategy for AI in HE",
-        link: "",
+        files: [
+            {
+                title: "D4.1.2. Online survey related to draft version of European Strategy for AI in HE",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D4.1.3. Analysis of answers",
-        link: "",
+        files: [
+            {
+                title: "D4.1.3. Analysis of answers",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D4.1.4. European Strategy for Integration of AI in HE",
-        link: "",
+        files: [
+            {
+                title: "D4.1.4. European Strategy for Integration of AI in HE",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D4.2.1. Dissemination Action Strategy",
-        link: "",
+        files: [
+            {
+                title: "D4.2.1. Dissemination Action Strategy",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D4.3.1. National Workshops",
-        link: "",
+        files: [
+            {
+                title: "D4.3.1. National Workshops",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D4.3.2. Online survey related to the quality of products",
-        link: "",
+        files: [
+            {
+                title: "D4.3.2. Online survey related to the quality of products",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D4.3.3. Online survey among participants to workshops",
-        link: "",
+        files: [
+            {
+                title: "D4.3.3. Online survey among participants to workshops",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D4.3.4. Analysis of answers and internal review",
-        link: "",
+        files: [
+            {
+                title: "D4.3.4. Analysis of answers and internal review",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D4.3.5. International Webinar",
-        link: "",
-    },{
+        files: [
+            {
+                title: "D4.3.5. International Webinar",
+                link: "",
+            }
+        ]
+    },
+    {
         type: "",
         name: "D4.3.6. Scientific articles",
-        link: "",
+        files: [
+            {
+                title: "D4.3.6. Scientific articles",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D5.1.1. Report on project activities impact on teachers, researchers and students and SEND students",
-        link: "",
+        files: [
+            {
+                title: "D5.1.1. Report on project activities impact on teachers, researchers and students and SEND students",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D5.2.1. Report on project activities impact on general public",
-        link: "",
+        files: [
+            {
+                title: "D5.2.1. Report on project activities impact on general public",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D5.2.2. Report on project results impact on general public",
-        link: "",
-    },{
+        files: [
+            {
+                title: "D5.2.2. Report on project results impact on general public",
+                link: "",
+            }
+        ]
+    },
+    {
         type: "",
         name: "D5.3.1. Report on project results impact on HE and other education institutions",
-        link: "",
+        files: [
+            {
+                title: "D5.3.1. Report on project results impact on HE and other education institutions",
+                link: "",
+            }
+        ],
     },
 
     {
         type: "",
         name: "D5.4.1. Strategy for follow up actions to boost AI in HE",
-        link: "",
+        files: [
+            {
+                title: "D5.4.1. Strategy for follow up actions to boost AI in HE",
+                link: "",
+            }
+        ]
     },
     {
         type: "",
         name: "D5.4.2. Roadmap for follow up actions to extend SMARTIE",
-        link: "",
+        files: [
+            {
+                title: "D5.4.2. Roadmap for follow up actions to extend SMARTIE",
+                link: "",
+            }
+        ],
     },
     
 

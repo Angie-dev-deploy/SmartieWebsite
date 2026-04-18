@@ -34,36 +34,79 @@ const MaterialsComponent = () => {
                 </div>
             </div>
 
-            <div className="download-files-section" >
+            <div className="download-files-section">
                 <ContentCard title="Download Files" icon={Folder}>
                     <div className="download-files-list">
-                        {downloadFiles.map((file, index) => (
-                            <div key={index} className="download-file-item">
-                                {file.link ? (
-                                    <a 
-                                        href={file.link} 
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <Button className="download-button">
-                                            Download
-                                        </Button>
-                                    </a>
-                                ) : (
-                                    <Button className="download-button" disabled>
-                                        Download
-                                    </Button>
-                                )}
-                    
-                                <div className="download-file-details">
-                                    <p>{file.type ? `${file.type} - ` : ""}{file.name}</p>
+                        {downloadFiles.map((fileGroup, index) => {
+                            const hasMultipleFiles = fileGroup.files.length > 1;
+
+                            return (
+                                <div key={index} className="download-file-item">
+                                    {hasMultipleFiles ? (
+                                        <div className="download-file-group">
+                                            <div className="download-file-group-title">
+                                                <p>
+                                                    {fileGroup.type ? `${fileGroup.type} - ` : ""}
+                                                    {fileGroup.name}
+                                                </p>
+                                            </div>
+
+                                            <div className="download-file-sublist">
+                                                {fileGroup.files.map((file, subIndex) => (
+                                                    <div key={subIndex} className="download-file-subitem">
+                                                        {file.link ? (
+                                                            <a
+                                                                href={file.link}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                            >
+                                                                <Button className="download-button">
+                                                                    Download
+                                                                </Button>
+                                                            </a>
+                                                        ) : (
+                                                            <Button className="download-button" disabled>
+                                                                Download
+                                                            </Button>
+                                                        )}
+
+                                                        <div className="download-file-details">
+                                                            <p>{file.title}</p>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    ) : (
+                                        <div className="download-file-single">
+                                            {fileGroup.files[0]?.link ? (
+                                                <a
+                                                    href={fileGroup.files[0].link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <Button className="download-button">
+                                                        Download
+                                                    </Button>
+                                                </a>
+                                            ) : (
+                                                <Button className="download-button" disabled>
+                                                    Download
+                                                </Button>
+                                            )}
+
+                                            <div className="download-file-details">
+                                                <p>
+                                                    {fileGroup.type ? `${fileGroup.type} - ` : ""}
+                                                    {fileGroup.name}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
-                                
-                            </div>
-                        ))}
-                        
+                            );
+                        })}
                     </div>
-                    
                 </ContentCard>
             </div>
             

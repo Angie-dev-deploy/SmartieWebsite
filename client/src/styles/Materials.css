@@ -101,6 +101,35 @@
     color: var(--secondary-text-color);
 }
 
+/* for group */
+
+.download-file-group-title {
+    color: var(--secondary-text-color);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.download-file-sublist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-left: 2rem;
+}
+
+.download-file-subitem,
+.download-file-single {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.download-file-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+
 @media screen and (max-width: 768px) {
     .download-file-item {
         flex-direction: column;
