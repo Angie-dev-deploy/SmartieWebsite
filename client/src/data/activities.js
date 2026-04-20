@@ -127,6 +127,7 @@ export const downloadFiles = [
             {
                 title: "D2.1.1. Alliance for Artificial Intelligence in Higher Education - SMARTIE",
                 link: d211,
+                counterKey: "d211-downloads",
             }
         ]
     },
@@ -137,6 +138,7 @@ export const downloadFiles = [
             {
                 title: "D2.1.2. Memorandum of Understanding signed by legal representatives of founders of SMARTIE",
                 link: d212,
+                counterKey: "d212-downloads",
             }
         ]
     },
@@ -147,6 +149,7 @@ export const downloadFiles = [
             {
                 title: "D2.2.1. E-questionnaire for higher education",
                 link: d221,
+                counterKey: "d221-downloads",
             }
         ]
     },
@@ -157,6 +160,7 @@ export const downloadFiles = [
             {
                 title: "D.2.2.2. E-questionnaire for stakeholders",
                 link: d222,
+                counterKey: "d222-downloads",
             }
         ]
     },
@@ -167,6 +171,7 @@ export const downloadFiles = [
             {
                 title: "D2.2.3. Survey among SMARTIE and other universities",
                 link: d223,
+                counterKey: "d223-downloads",
             }
         ]
     },
@@ -177,6 +182,7 @@ export const downloadFiles = [
             {
                 title: "D2.2.4. Survey among stakeholders",
                 link: d224,
+                counterKey: "d224-downloads",
             }
         ]
     },
@@ -187,10 +193,12 @@ export const downloadFiles = [
             {
                 title: "Analysis of the results - Stakeholders",
                 link: d225_1,
+                counterKey: "d225_1-downloads",
             },
             {
                 title: "Analysis of the results - HEIs",
                 link: d225_2,
+                counterKey: "d225_2-downloads",
             }
         ]
     },
@@ -201,6 +209,7 @@ export const downloadFiles = [
             {
                 title: "D2.2.6. Poll of disciplines and subjects that will be updated",
                 link: d226,
+                counterKey: "d226-downloads",
             }
         ]
     },
@@ -211,6 +220,7 @@ export const downloadFiles = [
             {
                 title: "D3.1.1. Guidelines for teachers and researchers",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -221,6 +231,7 @@ export const downloadFiles = [
             {
                 title: "D3.2.1. Guidelines for students and SEND students",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -231,6 +242,7 @@ export const downloadFiles = [
             {
                 title: "D3.2.2. Guidelines for general public",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -241,6 +253,7 @@ export const downloadFiles = [
             {
                 title: "D3.3.1. Micro-courses updated using guideline for teachers",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -251,6 +264,7 @@ export const downloadFiles = [
             {
                 title: "D3.3.2. Micro-presentations covering examples presented in guideline",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -261,6 +275,7 @@ export const downloadFiles = [
             {
                 title: "D3.3.3. Video for inclusive education of people with disabilities",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -271,6 +286,7 @@ export const downloadFiles = [
             {
                 title: "D3.4.1. LTT for teachers",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -281,6 +297,7 @@ export const downloadFiles = [
             {
                 title: "D4.1.1. National Strategies related to AI",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -291,6 +308,7 @@ export const downloadFiles = [
             {
                 title: "D4.1.2. Online survey related to draft version of European Strategy for AI in HE",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -301,6 +319,7 @@ export const downloadFiles = [
             {
                 title: "D4.1.3. Analysis of answers",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -311,6 +330,7 @@ export const downloadFiles = [
             {
                 title: "D4.1.4. European Strategy for Integration of AI in HE",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -321,6 +341,7 @@ export const downloadFiles = [
             {
                 title: "D4.2.1. Dissemination Action Strategy",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -331,6 +352,7 @@ export const downloadFiles = [
             {
                 title: "D4.3.1. National Workshops",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -341,6 +363,7 @@ export const downloadFiles = [
             {
                 title: "D4.3.2. Online survey related to the quality of products",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -351,6 +374,7 @@ export const downloadFiles = [
             {
                 title: "D4.3.3. Online survey among participants to workshops",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -361,6 +385,7 @@ export const downloadFiles = [
             {
                 title: "D4.3.4. Analysis of answers and internal review",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -371,6 +396,7 @@ export const downloadFiles = [
             {
                 title: "D4.3.5. International Webinar",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -381,6 +407,7 @@ export const downloadFiles = [
             {
                 title: "D4.3.6. Scientific articles",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -391,6 +418,7 @@ export const downloadFiles = [
             {
                 title: "D5.1.1. Report on project activities impact on teachers, researchers and students and SEND students",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -401,6 +429,7 @@ export const downloadFiles = [
             {
                 title: "D5.2.1. Report on project activities impact on general public",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -411,6 +440,7 @@ export const downloadFiles = [
             {
                 title: "D5.2.2. Report on project results impact on general public",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -421,6 +451,7 @@ export const downloadFiles = [
             {
                 title: "D5.3.1. Report on project results impact on HE and other education institutions",
                 link: "",
+                counterKey: "",
             }
         ],
     },
@@ -432,6 +463,7 @@ export const downloadFiles = [
             {
                 title: "D5.4.1. Strategy for follow up actions to boost AI in HE",
                 link: "",
+                counterKey: "",
             }
         ]
     },
@@ -442,6 +474,7 @@ export const downloadFiles = [
             {
                 title: "D5.4.2. Roadmap for follow up actions to extend SMARTIE",
                 link: "",
+                counterKey: "",
             }
         ],
     },
