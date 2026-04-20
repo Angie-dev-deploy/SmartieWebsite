@@ -193,12 +193,12 @@ export const downloadFiles = [
             {
                 title: "Analysis of the results - Stakeholders",
                 link: d225_1,
-                counterKey: "d225_1-downloads",
+                counterKey: "d2251-downloads",
             },
             {
                 title: "Analysis of the results - HEIs",
                 link: d225_2,
-                counterKey: "d225_2-downloads",
+                counterKey: "d2252-downloads",
             }
         ]
     },
