@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 import "../styles/ImagesScrollModal.css";
 
 function ImagesScrollModal(props) {
-  const {isOpen, toggle, className, images } = props;
+  const {isOpen, toggle, className, images, imageTitle } = props;
   const isVideo = (image) => {
     return /\.(mp4|webm|ogg)$/i.test(image);
   };
@@ -45,13 +45,18 @@ function ImagesScrollModal(props) {
                                 src={image}
                                 controls
                                 playsInline
-                                alt={`Activity Video ${index + 1}`}
+                                alt={`${imageTitle} Video ${index + 1}`}
                             />
                         ) : (
-                          <img src={image} alt={`Activity ${index + 1}`} className='modal-image'/>
+                          <img src={image} alt={`${imageTitle} Activity ${index + 1}`} className='modal-image'/>
                         )}
                     </div>
                 ))}
+                {imageTitle && (
+                    <div className='modal-image-title'>
+                        <h3>{imageTitle}</h3>
+                    </div>
+                )}
             </div>
         </ModalBody>
         <ModalFooter>

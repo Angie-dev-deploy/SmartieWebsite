@@ -15,6 +15,7 @@ const isVideoPath = (path) => /\.(mp4|webm|ogg)$/i.test(path);
 const GalleryComponent = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState([]);
+    const [selectedImageTitle, setSelectedImageTitle] = useState("");
     const videoRef = useRef(null);
     const location = useLocation();
 
@@ -68,6 +69,11 @@ const GalleryComponent = () => {
             {video && (
                 <section className="gallery-videos-section">
                     <h2 className="gallery-section-title">Videos</h2>
+                    {video.image_title && (
+                        <p className="gallery-video-title">
+                            {video.image_title}
+                        </p>
+                    )}
                     <div className="gallery-video-wrapper">
                         <video
                             ref={videoRef}
@@ -91,7 +97,7 @@ const GalleryComponent = () => {
                             <div
                                 key={index}
                                 className="gallery-photo-item"
-                                onClick={() => { setSelectedImage([item.path]); setModalOpen(true); }}
+                                onClick={() => { setSelectedImage([item.path]); setSelectedImageTitle(item.image_title); setModalOpen(true); }}
                                 data-aos="fade-up"
                             >
                                 <img src={item.path} alt={`Gallery ${index + 1}`} className="gallery-photo-img" />
@@ -108,6 +114,7 @@ const GalleryComponent = () => {
                 isOpen={modalOpen}
                 toggle={() => setModalOpen(false)}
                 images={selectedImage}
+                imageTitle={selectedImageTitle}
             />
         </div>
     );

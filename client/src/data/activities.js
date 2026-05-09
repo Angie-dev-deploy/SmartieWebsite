@@ -488,30 +488,39 @@ export const downloadFiles = [
 export const images = [
     {
         path: tm1_1,
+        image_title: "Craiova, 2024 (KOM)"
     },
     {
         path: tm1_2,
+        image_title: "Craiova, 2024 (KOM)"
     },
     {
         path: tm1_3,
+        image_title: "Craiova, 2024 (KOM)"
     },
     {
         path: tm1_4,
+        image_title: "Craiova, 2024 (KOM)"
     },
     {
         path: tm1_5,
+        image_title: "Craiova, 2024 (KOM)"
     },
     {
         path: tm1_6,
+        image_title: "Craiova, 2024 (KOM)"
     },
     {
         path: tm1_7,
+        image_title: "Craiova, 2024 (KOM)"
     },
     {
         path: tm1_8,
+        image_title: "Craiova, 2024 (KOM)"
     },
     {
         path: tm1_9,
+        image_title: "Craiova, 2024 (ASR Conference)"
     }
     
 ];
