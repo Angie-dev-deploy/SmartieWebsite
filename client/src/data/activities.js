@@ -16,6 +16,7 @@ import tm1_5 from "../resources/images/TPM 1 - 5.jpg";
 import tm1_6 from "../resources/images/TPM 1 - 6.jpg";
 import tm1_7 from "../resources/images/TPM 1 - 7.jpg";
 import tm1_8 from "../resources/images/TPM 1 - 8.jpg";
+import tm1_9 from "../resources/images/TPM 1 - 9.jpeg";
 
 import d211 from "../resources/results/D.2.1.1. Alliance for Artificial Intelligence in Higher Education - SMARTIE.pdf";
 import d212 from "../resources/results/D.2.1.2. Memorandum of Understanding.pdf";
@@ -26,6 +27,7 @@ import d224 from "../resources/results/D.2.2.4. Survey among stakeholders.pdf";
 import d225_1 from "../resources/results/D.2.2.5. Analysis of the results - Stakeholders.pdf";
 import d225_2 from "../resources/results/D.2.2.5. Analysis of the results - HEIs.pdf";
 import d226 from "../resources/results/D.2.2.6. Poll of disciplines and subjects that will be updated.pdf";
+import d421 from "../resources/results/D.4.2.1. Dissemination Action Strategy.pdf";
 
 
 export const webinars = [
@@ -340,8 +342,8 @@ export const downloadFiles = [
         files: [
             {
                 title: "D4.2.1. Dissemination Action Strategy",
-                link: "",
-                counterKey: "",
+                link: d421,
+                counterKey: "d421-downloads",
             }
         ]
     },
@@ -508,5 +510,8 @@ export const images = [
     {
         path: tm1_8,
     },
+    {
+        path: tm1_9,
+    }
     
 ];
