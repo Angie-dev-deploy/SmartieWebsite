@@ -20,6 +20,7 @@ import tm1_9 from "../resources/images/TPM 1 - 9.jpeg";
 
 import d211 from "../resources/results/D.2.1.1. Alliance for Artificial Intelligence in Higher Education - SMARTIE.pdf";
 import d212 from "../resources/results/D.2.1.2. Memorandum of Understanding.pdf";
+import d212_2 from "../resources/results/D.2.1.2. Joint Declaration.pdf";
 import d221 from "../resources/results/D.2.2.1. E-questionnaire for higher education.pdf";
 import d222 from "../resources/results/D.2.2.2. E-questionnaire for stakeholders.pdf";
 import d223 from "../resources/results/D.2.2.3. Survey among SMARTIE and other universities.pdf";
@@ -141,6 +142,11 @@ export const downloadFiles = [
                 title: "D2.1.2. Memorandum of Understanding signed by legal representatives of founders of SMARTIE",
                 link: d212,
                 counterKey: "d212-downloads",
+            },
+            {
+                title: "D2.1.2. Joint Declaration",
+                link: d212_2,
+                counterKey: "d2122-downloads",
             }
         ]
     },
