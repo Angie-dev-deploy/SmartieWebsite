@@ -25,6 +25,7 @@ import slovakiaflag from "../resources/slovakiaflag.webp";
 import sloveniaflag from "../resources/sloveniaflag.webp";
 import austriaflag from "../resources/austriaflag.webp";
 import portugalflag from "../resources/portoflag.webp";
+import BecomeAMemberComponent from "./BecomeAMemberComponent";
 
 const PartnersComponent = () => {
 
@@ -197,6 +198,7 @@ It is the largest Romanian university (approximately 45.000 students and 1.700 f
                 
 
             </div>
+            <BecomeAMemberComponent />
         </div>
       
     );

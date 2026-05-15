@@ -1,0 +1,128 @@
+.become-a-member-container {
+    max-width: 95%;
+    margin: 3rem auto;
+    padding: 3rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.become-a-member-container-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.become-a-member-container-description {
+    background-color: var(--card-background-color);
+    /* border: 1px solid #16834a; */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+    padding: 1.5rem;
+    margin: 0;
+
+    font-size: 1.35rem;
+    line-height: 1.25;
+    color: white;
+    text-align: left;
+
+    flex: 1;
+}
+
+.become-a-member-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+
+    flex: 1;
+}
+
+.btn.become-a-member-button {
+    width: 100%;
+    height: 50px;
+    padding: 0.8rem;
+    background-color: var(--secondary-background-color);
+    border: none;
+    border-radius: 15px;
+
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn.become-a-member-button:hover,
+.btn.become-a-member-button:focus,
+.btn.become-a-member-button:active {
+    background-color: white;
+    border-color: var(--secondary-background-color);
+    color: var(--secondary-background-color);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* layout text stânga + butoane dreapta */
+.become-a-member-container > p,
+.become-a-member-button-container {
+    min-width: 0;
+}
+
+/* wrapper logic folosind container-ul actual */
+.become-a-member-container {
+    align-items: stretch;
+}
+
+/* desktop: descriere + butoane pe același rând */
+@media screen and (min-width: 900px) {
+    .become-a-member-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    .become-a-member-container-title {
+        grid-column: 1 / -1;
+    }
+
+    .become-a-member-container-description {
+        grid-column: 1;
+    }
+
+    .become-a-member-button-container {
+        grid-column: 2;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 899px) {
+    .become-a-member-container {
+        padding: 2rem 0;
+    }
+
+    .become-a-member-container-title {
+        font-size: 1.6rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .become-a-member-container-description {
+        font-size: 1.05rem;
+    }
+
+    .become-a-member-button.btn {
+        font-size: 1rem;
+    }
+}
