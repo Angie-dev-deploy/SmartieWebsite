@@ -3,7 +3,7 @@ import "../styles/BecomeAMember.css";
 
 const BecomeAMemberComponent = () => {
     return (
-        <div className="become-a-member-container">
+        <div id="join-smartie" className="become-a-member-container">
             <h2 className="become-a-member-container-title">Become a Member</h2>
             <p className="become-a-member-container-description">
                 Join the SMARTIE Alliance and contribute to the advancement of AI in higher education. As a member, you will have access to exclusive resources, events, and opportunities to collaborate with leading institutions in the field.

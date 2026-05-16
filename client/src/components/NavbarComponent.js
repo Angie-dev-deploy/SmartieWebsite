@@ -47,11 +47,25 @@ function NavbarComponent(args) {
 
   const handleNavigate = (path) => {
     navigate(path);
+
     setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
+      const hash = path.split("#")[1];
+
+      if (hash) {
+        const element = document.getElementById(hash);
+
+        if (element) {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      } else {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
     }, 100);
   };
 
@@ -90,6 +104,9 @@ function NavbarComponent(args) {
             </NavItem>
             <NavItem className='smartie-nav-item'>
               <NavLink className='contact-us smartie-nav-link' onClick={() => handleNavigate(CONTACTUS.name)}>Contact Us!</NavLink>
+            </NavItem>
+            <NavItem className='smartie-nav-item'>
+              <NavLink className='contact-us smartie-nav-link' onClick={() => handleNavigate(`${PARTNERS.name}#join-smartie`)}>Join SMARTIE!</NavLink>
             </NavItem>
           </Nav>
 
