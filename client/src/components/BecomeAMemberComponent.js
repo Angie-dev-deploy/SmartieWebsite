@@ -1,6 +1,8 @@
 import { Button } from "reactstrap";
 import "../styles/BecomeAMember.css";
 
+import pdfForm from "../resources/PDF_Form_Smartie.pdf";
+
 const BecomeAMemberComponent = () => {
     return (
         <div id="join-smartie" className="become-a-member-container">
@@ -9,7 +11,7 @@ const BecomeAMemberComponent = () => {
                 Join the SMARTIE Alliance and contribute to the advancement of AI in higher education. As a member, you will have access to exclusive resources, events, and opportunities to collaborate with leading institutions in the field.
             </p>
             <div className="become-a-member-button-container">
-                <Button className="become-a-member-button" href="" target="_blank" rel="noopener noreferrer">
+                <Button className="become-a-member-button" href={pdfForm} target="_blank" rel="noopener noreferrer">
                     Application Form PDF
                 </Button>
                 <Button className="become-a-member-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfR9DcKGRAmDUsbt7lSf88smysJgjNU6mz-S6gIUm-RrePMFw/viewform?usp=header" target="_blank" rel="noopener noreferrer">
