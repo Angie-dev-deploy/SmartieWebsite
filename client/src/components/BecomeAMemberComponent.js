@@ -12,7 +12,7 @@ const BecomeAMemberComponent = () => {
                 <Button className="become-a-member-button" href="" target="_blank" rel="noopener noreferrer">
                     Application Form PDF
                 </Button>
-                <Button className="become-a-member-button" href="" target="_blank" rel="noopener noreferrer">
+                <Button className="become-a-member-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfR9DcKGRAmDUsbt7lSf88smysJgjNU6mz-S6gIUm-RrePMFw/viewform?usp=header" target="_blank" rel="noopener noreferrer">
                     Register Online Now
                 </Button>
             </div>
