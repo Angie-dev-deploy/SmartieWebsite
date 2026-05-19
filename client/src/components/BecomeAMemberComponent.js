@@ -1,7 +1,7 @@
 import { Button } from "reactstrap";
 import "../styles/BecomeAMember.css";
 
-import pdfForm from "../resources/PDF_Form_Smartie.pdf";
+import pdfForm from "../resources/D.2.1.1. Application Form - hard copy.pdf";
 
 const BecomeAMemberComponent = () => {
     return (
